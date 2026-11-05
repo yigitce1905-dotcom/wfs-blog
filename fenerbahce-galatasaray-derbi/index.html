@@ -10,7 +10,7 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="Women's Football Scouting">
 <meta property="og:title" content="Derbi Öncesi Üç Bakış: Fenerbahçe – Galatasaray">
-<meta property="og:description" content="10. haftanın derbisini üç yorumcuya sorduk: form, kilit eşleşmeler, senaryolar ve skor tahminleri.">
+<meta property="og:description" content="10. haftanın derbisini üç yorumcuya sorduk. Ayrıca ilk 11 tahminleri, animasyonlu senaryolar ve veriyle güçlü ve zayıf yanlar.">
 <meta property="og:url" content="https://blog.womenfootballscouting.com/fenerbahce-galatasaray-derbi/">
 <meta property="og:image" content="https://blog.womenfootballscouting.com/fenerbahce-galatasaray-derbi/kapak.png">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <meta property="article:section" content="Kadın Futbol Süper Ligi">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Derbi Öncesi Üç Bakış: Fenerbahçe – Galatasaray">
-<meta name="twitter:description" content="10. haftanın derbisini üç yorumcuya sorduk: form, kilit eşleşmeler, senaryolar ve skor tahminleri.">
+<meta name="twitter:description" content="10. haftanın derbisini üç yorumcuya sorduk. Ayrıca ilk 11 tahminleri, animasyonlu senaryolar ve veriyle güçlü ve zayıf yanlar.">
 <meta name="twitter:image" content="https://blog.womenfootballscouting.com/fenerbahce-galatasaray-derbi/kapak.png">
 <meta name="theme-color" content="#0c0f1e">
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -158,6 +158,103 @@ footer{max-width:1040px;margin:56px auto 0;padding:22px 20px 34px;border-top:1px
   font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 footer a{color:var(--soluk)}
 
+
+
+
+
+/* VERI-MASASI-CSS */
+.vm{max-width:960px;margin:72px auto 0;scroll-margin-top:76px}
+.vm-kafa{max-width:760px;margin:0 auto 6px;border-top:1px solid var(--cizgi);padding-top:28px}
+.vm-kafa h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(32px,5vw,44px);line-height:1.02;margin:8px 0 8px;color:var(--guclu)}
+.vm-kafa p,.vm-p{color:#cbd5e1;font-size:15.5px;line-height:1.6;margin:0}
+.vm-p{max-width:760px;margin:0 auto 16px}
+.vm-ara{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(26px,4vw,32px);color:var(--guclu);
+  max-width:760px;margin:44px auto 8px;scroll-margin-top:76px}
+.vm-not{max-width:760px;margin:14px auto 0;font-size:14px;color:var(--soluk);line-height:1.55}
+.vm-not b{color:var(--metin)}
+.xi{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.xi-k{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:14px;padding:14px 14px 12px;min-width:0}
+.xi-k.fb{border-top:4px solid var(--fb2)} .xi-k.gs{border-top:4px solid var(--gs2)}
+.xi-b{display:flex;justify-content:space-between;align-items:baseline;margin:0 2px 8px}
+.xi-b b{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;color:var(--guclu)}
+.xi-b span{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:18px;letter-spacing:.06em;color:var(--soluk)}
+.xi-k p{font-size:14px;line-height:1.55;color:#cbd5e1;margin:10px 2px 0}
+.xi-k p b{color:var(--guclu)} .xi-alt{color:var(--soluk)!important}
+svg.xi-saha{display:block;width:100%;height:auto}
+.xf{fill:#0f2a1f;stroke:#2f5b47;stroke-width:1.2}.xl{fill:none;stroke:#2f5b47;stroke-width:1}.xg{fill:#2f5b47}
+.xc.fb{fill:#12318f;stroke:var(--fb2);stroke-width:2}.xc.gs{fill:#a3182f;stroke:var(--gs2);stroke-width:2}
+.xn{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:12.5px;fill:#fff;text-anchor:middle}
+.xa{font-family:Inter,sans-serif;font-weight:600;font-size:10.5px;fill:#e2e8f0;text-anchor:middle;paint-order:stroke;stroke:#0f2a1f;stroke-width:3px}
+.sn{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:26px;align-items:start}
+.sn-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.sn-tab{font:800 18px "Barlow Condensed",sans-serif;width:40px;height:40px;border-radius:50%;border:2px solid var(--cizgi);
+  background:var(--yuzey);color:var(--metin);cursor:pointer}
+.sn-tab[aria-selected="true"]{background:var(--mor);border-color:var(--mor);color:#fff}
+.sn-tab:focus-visible,.sn-ctl:focus-visible{outline:3px solid var(--fb2);outline-offset:2px}
+svg.sn-saha{display:block;width:100%;height:auto;border-radius:10px}
+.pf{fill:#0f2a1f;stroke:#2f5b47;stroke-width:1.2}.pl{fill:none;stroke:#2f5b47;stroke-width:1}.goal{fill:#3d7a5f}
+.sn-kale{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:11px;letter-spacing:.08em;fill:#7fb39a}
+.a-fb{fill:#12318f;stroke:#f7d417;stroke-width:1.5}.a-gs{fill:#a3182f;stroke:#fdb913;stroke-width:1.5}
+.a-ring{fill:none;stroke:#c4b5fd;stroke-width:2.4;animation:snpuls 1.6s ease-in-out infinite}
+@keyframes snpuls{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.a-ring{animation:none}}
+.alab{font-family:"Barlow Condensed",sans-serif;font-size:9.5px;font-weight:700;pointer-events:none;text-anchor:middle}
+.alab.fb{fill:#f7d417}.alab.gs{fill:#fff}
+.ball{fill:#fff;stroke:#0c0f1e;stroke-width:1.3}
+.trail{fill:none;stroke:#94a3b8;stroke-width:1.3;stroke-dasharray:2 3;stroke-linecap:round}
+.callb{opacity:0;transition:opacity .15s}.callb.on{opacity:1}
+.callb rect{fill:#a855f7}.callb text{font-family:"Barlow Condensed",sans-serif;font-size:12.5px;font-weight:800;fill:#fff;text-anchor:middle}
+.sn-ctrls{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.sn-ctl{font:600 14px Inter,sans-serif;padding:8px 16px;border-radius:99px;border:1px solid var(--cizgi);background:var(--yuzey);color:var(--metin);cursor:pointer}
+.sn-ctl.pri{background:var(--mor);border-color:var(--mor);color:#fff}
+.sn-cap{margin-top:12px;padding:12px 14px;border:1px solid var(--cizgi);border-radius:10px;background:var(--yuzey);min-height:112px}
+.sn-cap .st{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.12em;color:var(--soluk2)}
+.sn-cap b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:21px;line-height:1.15;margin:2px 0 4px;color:var(--guclu)}
+.sn-cap p{margin:0;font-size:14.5px;line-height:1.55;color:#cbd5e1}
+.sn-dots{display:flex;gap:6px;margin-top:8px}.sn-dots i{flex:1;height:4px;border-radius:2px;background:var(--cizgi)}.sn-dots i.on{background:var(--mor)}
+.sn-lej{display:grid;gap:12px}
+.sn-lt{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:23px;color:var(--guclu);margin:0}
+.sn-lg{display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:start}
+.sn-bd{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font:800 17px "Barlow Condensed",sans-serif}
+.sn-bd.fb{background:#12318f;color:#f7d417;border:1.5px solid #f7d417}.sn-bd.gs{background:#a3182f;color:#fff;border:1.5px solid #fdb913}
+.sn-bd.ik{background:#2a1a55;color:#c4b5fd;border:1.5px solid #6d4fd1}
+.sn-lg h4{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:var(--guclu)}
+.sn-lg p{margin:2px 0 0;font-size:14px;line-height:1.5;color:#cbd5e1}
+.sn-etk{font-size:12.5px!important;color:var(--soluk)!important;line-height:1.6;margin:4px 0 0}
+.sn-etk b{color:var(--metin)}
+.vm-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 16px}
+.vm-tiles div{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:12px;padding:12px 14px;min-width:0}
+.vm-tiles b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:32px;line-height:1;color:var(--guclu);font-variant-numeric:tabular-nums}
+.vm-tiles span{display:block;font-size:13px;line-height:1.4;color:#cbd5e1;margin-top:5px}
+.vm-graf{margin:0 0 18px;max-width:none;background:var(--yuzey);border:1px solid var(--cizgi);border-radius:12px;padding:14px 16px 12px}
+.vm-gb{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;margin-bottom:4px}
+.vm-gb b{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:22px;color:var(--guclu);margin-right:auto}
+.vm-gb .lg{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#cbd5e1}
+.vm-gb .lg i{width:12px;height:12px;border-radius:3px}.vm-gb .lg i.fb{background:#f7d417}.vm-gb .lg i.gs{background:#ef4a5a}
+.grafik-k{overflow-x:auto}
+svg.grafik{display:block;width:100%;min-width:480px;height:auto}
+.gz{stroke:#262d57;stroke-width:1}.ga{stroke:#4b5581;stroke-width:1;stroke-dasharray:3 3}
+.gt{font-family:Inter,sans-serif;font-size:12px;fill:#94a3b8}
+.gv{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15px;fill:#e2e8f0}
+.gb.fb{fill:#f7d417}.gb.gs{fill:#ef4a5a}
+.vm-graf figcaption{margin:8px 0 0;max-width:none;font-size:13.5px}
+.gz-izgara{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gk{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:14px;padding:14px 16px 6px;min-width:0}
+.gk.iyi{border-top:4px solid #3fbf7f}.gk.kotu{border-top:4px solid #f0645a}
+.gk-b{margin-bottom:4px}
+.gk-b b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:23px;line-height:1.1}
+.gk.fb .gk-b b{color:var(--fb2)}.gk.gs .gk-b b{color:var(--gs2)}
+.gk-b span{font-size:13px;color:var(--soluk)}
+.gm{padding:11px 0;border-top:1px solid var(--cizgi)}
+.gk-b + .gm{border-top:0}
+.gm h4{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:var(--guclu)}
+.gm p{margin:3px 0 0;font-size:14px;line-height:1.55;color:#cbd5e1}
+.gm p.ev{font-size:12.5px;color:var(--soluk2);margin-top:5px;line-height:1.5}
+.gk.iyi .gm h4::before{content:"+ ";color:#3fbf7f}.gk.kotu .gm h4::before{content:"– ";color:#f0645a}
+@media (max-width:860px){.sn{grid-template-columns:minmax(0,1fr)}.vm-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:720px){.xi,.gz-izgara{grid-template-columns:minmax(0,1fr)}}
+/* /VERI-MASASI-CSS */
+
 @media (max-width:720px){
   body{font-size:16.5px}
   .macbilgi{grid-template-columns:1fr 1fr}
@@ -183,7 +280,7 @@ footer a{color:var(--soluk)}
     <div class="kick"><i></i>DERBİ DOSYASI · KADIN FUTBOL SÜPER LİGİ</div>
     <h1>Derbi Öncesi Üç Bakış: Fenerbahçe – Galatasaray</h1>
     <p class="dek">Ligin yenilgisiz takımlarından ikisi cumartesi Dereağzı'nda karşı karşıya. Derbiyi üç yorumcuya sorduk: biri maça sarı-lacivert, biri sarı-kırmızı pencereden, biri de iki takımın oyun kimliği üzerinden bakıyor.</p>
-    <div class="meta"><span><b>WFS Analiz Masası</b></span><span>6 Kasım 2026</span><span>8 dk okuma</span></div>
+    <div class="meta"><span><b>WFS Analiz Masası</b></span><span>6 Kasım 2026</span><span>12 dk okuma</span></div>
   </div>
 
   <div class="kapak">
@@ -202,7 +299,7 @@ footer a{color:var(--soluk)}
 
   <div class="yazi giris">
     <p>Kadın Futbol Süper Ligi'nde 10. haftanın en büyük maçı cumartesi saat 15.00'te oynanacak. Dokuz haftada yenilgi yüzü görmeyen Galatasaray 21 puanla zirvede. Fenerbahçe ise iki maçı eksikken 7 maçta 19 puan topladı ve kalesinde yalnızca bir gol gördü. Eksik maçlarını kazanırsa 25 puana çıkabilecek sarı-lacivertlilerle liderliği bırakmak istemeyen sarı-kırmızılılar arasındaki bu maç, sezonun ilk yarısındaki şampiyonluk yarışını doğrudan etkileyecek.</p>
-    <p>Derbiye giderken üç yorumcuya aynı temalarda, ama her birinin bakış açısına göre şekillenen sorular yönelttik: maçın atmosferi, takımların son durumu, oyun kurgusu, kilit oyuncular, senaryolar ve skor tahmini.</p>
+    <p>Derbiye giderken üç yorumcuya aynı temalarda, ama her birinin bakış açısına göre şekillenen sorular yönelttik: maçın atmosferi, takımların son durumu, oyun kurgusu, kilit oyuncular, senaryolar ve skor tahmini. Yazının sonundaki <a href="#veri-masasi">Veri Masası</a>'nda ise sitenin verisiyle ilk 11 tahminlerini, altı animasyonlu senaryoyu ve iki takımın güçlü ve zayıf yanlarını bulacaksınız.</p>
 
     <div class="not">
       <div class="ik" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
@@ -341,6 +438,85 @@ footer a{color:var(--soluk)}
     </div>
   </section>
 
+
+
+
+
+<!-- VERI-MASASI -->
+  <section class="vm" id="veri-masasi" aria-labelledby="vm-baslik">
+    <div class="vm-kafa">
+      <div class="kick"><i></i>VERİ MASASI</div>
+      <h2 id="vm-baslik">Sitenin verisiyle derbi</h2>
+      <p>Bu bölüm yorumcularımızın değil, sitenin veri tabanının: TFF maç raporları (ilk 11, dakika, gol, kart) ve scout ekibimizin oyuncu notları. Not ölçeği: A+ en yüksek, ardından AA, AB, BB, BC, CC, CD, DD, DE, EE; FF en düşük.</p>
+    </div>
+
+    <h3 class="vm-ara" id="ilk-11">İlk 11 tahminleri</h3>
+    <p class="vm-p">TFF diziliş yayınlamıyor. Dizilişleri ve mevkileri scout ekibinin mevki bilgisinden ve Tarafsız yorumcumuzun eşleşmelerinden kurduk. Daire içindeki harfler oyuncunun genel scout notu.</p>
+    <div class="xi">
+      <div class="xi-k fb">
+        <div class="xi-b"><b>Fenerbahçe</b><span>4-1-2-3</span></div>
+        <svg class='xi-saha' viewBox='0 0 300 330' role='img' aria-label='Fenerbahçe ilk 11 tahmini, 4-1-2-3: Munteanu; Alves, Bowen, Kaya, Ndzana; Otu; Türkoğlu, Abideen; Busem Şeker, Stašková, Kaján'><rect class='xf' x='8' y='8' width='284' height='314' rx='8'/><path class='xl' d='M8 8 H292'/><path class='xl' d='M104 8 A46 46 0 0 0 196 8'/><rect class='xl' x='62' y='242' width='176' height='80'/><rect class='xl' x='116' y='296' width='68' height='26'/><path class='xl' d='M118 242 A36 36 0 0 1 182 242'/><rect class='xg' x='130' y='322' width='40' height='5' rx='1.5'/><g transform='translate(150,284)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Munteanu</text></g><g transform='translate(252,232)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Alves</text></g><g transform='translate(192,250)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>BB</text><text class='xa' y='29'>Bowen</text></g><g transform='translate(108,250)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Kaya</text></g><g transform='translate(48,232)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>BC</text><text class='xa' y='29'>Ndzana</text></g><g transform='translate(150,196)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Otu</text></g><g transform='translate(214,148)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Türkoğlu</text></g><g transform='translate(86,148)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Abideen</text></g><g transform='translate(252,74)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>BC</text><text class='xa' y='29'>Busem</text></g><g transform='translate(150,52)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Stašková</text></g><g transform='translate(48,74)'><circle r='15.5' class='xc fb'/><text class='xn' y='3.6'>BC</text><text class='xa' y='29'>Kaján</text></g></svg>
+        <p><b>Neden bu 11:</b> Büyük maçlardaki kadrolardan. FOMGET (2-0), Beşiktaş deplasmanı (3-0) ve Yüksekova deplasmanında (1-1) Munteanu, Bowen, Otu, Busem, Türkoğlu, Kaján ve Stašková'nın yedisi de ilk 11'deydi. Zayıf rakiplere karşı rotasyon yapılıyor: Giresun'da Stašková, Türkoğlu ve Kaján yedekteydi.</p>
+        <p class="xi-alt"><b>Alternatifler:</b> kalede Sol Belotto (3 ilk 11), sağ bekte Fatma Şakar, orta sahada Abideen yerine Marie Ngah (Beşiktaş deplasmanında ilk 11).</p>
+      </div>
+      <div class="xi-k gs">
+        <div class="xi-b"><b>Galatasaray</b><span>4-2-3-1</span></div>
+        <svg class='xi-saha' viewBox='0 0 300 330' role='img' aria-label='Galatasaray ilk 11 tahmini, 4-2-3-1: Morais; Keskin, Karataş, Costa, Gbedjissi; Chang Jang, Foederer; Silva, Topçu, Pekel; Prieto'><rect class='xf' x='8' y='8' width='284' height='314' rx='8'/><path class='xl' d='M8 8 H292'/><path class='xl' d='M104 8 A46 46 0 0 0 196 8'/><rect class='xl' x='62' y='242' width='176' height='80'/><rect class='xl' x='116' y='296' width='68' height='26'/><path class='xl' d='M118 242 A36 36 0 0 1 182 242'/><rect class='xg' x='130' y='322' width='40' height='5' rx='1.5'/><g transform='translate(150,284)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>BB</text><text class='xa' y='29'>Morais</text></g><g transform='translate(252,232)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>CD</text><text class='xa' y='29'>Keskin</text></g><g transform='translate(192,250)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Karataş</text></g><g transform='translate(108,250)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>BC</text><text class='xa' y='29'>Costa</text></g><g transform='translate(48,232)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>BC</text><text class='xa' y='29'>Gbedjissi</text></g><g transform='translate(196,180)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>CD</text><text class='xa' y='29'>Chang Jang</text></g><g transform='translate(104,180)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Foederer</text></g><g transform='translate(252,104)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>AB</text><text class='xa' y='29'>Silva</text></g><g transform='translate(150,118)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Topçu</text></g><g transform='translate(48,104)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>CC</text><text class='xa' y='29'>Pekel</text></g><g transform='translate(150,50)'><circle r='15.5' class='xc gs'/><text class='xn' y='3.6'>BC</text><text class='xa' y='29'>Prieto</text></g></svg>
+        <p><b>Neden bu 11:</b> Sezonun en istikrarlı isimleri: Gbedjissi, Foederer ve Pekel 9 maçın 9'unda, Morais ve Karataş oynadıkları 8 maçın hepsinde ilk 11'deydi. Orta sahadaki üçüncü isim en belirsiz yer; Sarı-Kırmızı yorumcumuzun işaret ettiği gibi Chang Jang'ı koyduk.</p>
+        <p class="xi-alt"><b>Alternatifler:</b> Keskin 9. haftada oynamadı; oynayamazsa sağ bekte İrem Eren (9. hafta ilk 11). Chang Jang yerine Oliwia Domin ya da ikinci forvette Melike Öztürk (6 ilk 11).</p>
+      </div>
+    </div>
+    <p class="vm-not">İki tahmini 11'de 22 oyuncunun 15'i yabancı (Fenerbahçe 8, Galatasaray 7). Sarı-Kırmızı yorumcumuzun "yabancıların yerlilerin önüne geçtiği güç mücadelesi" yorumu kadroya da yansıyor.</p>
+
+    <h3 class="vm-ara" id="senaryolar">Altı senaryo, animasyonlu</h3>
+    <p class="vm-p">A'dan F'ye bir senaryo seçip Oynat'a bas. Fenerbahçe lacivert, Galatasaray kırmızı; mor halkalı oyuncu senaryonun odağı. Sahanın üstündeki kale her senaryoda farklı, altta yazıyor. Senaryolar scout notlarından ve maç raporlarından kuruldu; takip verisi değil, örnektir.</p>
+    <div class="sn">
+      <div>
+        <div class="sn-tabs" role="tablist" aria-label="Senaryo"><button class='sn-tab' role='tab' data-k='A' aria-selected='true' aria-label='Senaryo A'>A</button><button class='sn-tab' role='tab' data-k='B' aria-selected='false' aria-label='Senaryo B'>B</button><button class='sn-tab' role='tab' data-k='C' aria-selected='false' aria-label='Senaryo C'>C</button><button class='sn-tab' role='tab' data-k='D' aria-selected='false' aria-label='Senaryo D'>D</button><button class='sn-tab' role='tab' data-k='E' aria-selected='false' aria-label='Senaryo E'>E</button><button class='sn-tab' role='tab' data-k='F' aria-selected='false' aria-label='Senaryo F'>F</button></div>
+        <svg id="sn-svg" class="sn-saha" viewBox="0 0 340 312" role="img" aria-label="Seçilen senaryonun animasyonlu saha görünümü">
+          <rect class="pf" x="10" y="10" width="320" height="290" rx="6"/><rect class="pl" x="75" y="10" width="190" height="78"/><rect class="pl" x="127" y="10" width="86" height="26"/><circle class="pl" cx="170" cy="62" r="1.6"/><path class="pl" d="M130 88 A40 40 0 0 0 210 88"/><path class="pl" d="M124 300 A46 46 0 0 1 216 300"/><rect class="goal" x="148" y="4" width="44" height="6" rx="1.5"/>
+          <text id="sn-kale" class="sn-kale" x="18" y="292">↑ KALE</text>
+          <g id="sn-trails"></g><g id="sn-actors"></g><g id="sn-ballL"></g>
+          <g id="sn-callb" class="callb"><rect x="-30" y="-11" width="60" height="20" rx="10"/><text x="0" y="3.5">!</text></g>
+        </svg>
+        <div class="sn-ctrls">
+          <button class="sn-ctl pri" id="sn-play">Oynat</button>
+          <button class="sn-ctl" id="sn-next">İleri</button>
+          <button class="sn-ctl" id="sn-reset">Baştan</button>
+        </div>
+        <div class="sn-cap" id="sn-cap" aria-live="polite"></div>
+        <div class="sn-dots" id="sn-dots"></div>
+      </div>
+      <div class="sn-lej">
+        <h4 id="sn-lg-title" class="sn-lt">A</h4>
+        <div class='sn-lg'><span class='sn-bd gs'>A</span><div><h4>Jéssica Silva – Colette Ndzana</h4><p>İki ilk 11'in en yüksek notlu oyuncusu, bire birde.</p></div></div><div class='sn-lg'><span class='sn-bd fb'>B</span><div><h4>Kaján, Keskin'in arkasında</h4><p>Bek oynayan kanat oyuncusunun boşalttığı alan.</p></div></div><div class='sn-lg'><span class='sn-bd ik'>C</span><div><h4>Galatasaray basarsa</h4><p>Munteanu'nun kısa oyunu zayıf; çıkış yolu uzun top.</p></div></div><div class='sn-lg'><span class='sn-bd fb'>D</span><div><h4>Busem Şeker – Aude Gbedjissi</h4><p>Diğer kanatta aynı açık, bu kez sağdan.</p></div></div><div class='sn-lg'><span class='sn-bd gs'>E</span><div><h4>Duran top, ikinci top</h4><p>Uzaklaştırılan topta Ebru Topçu.</p></div></div><div class='sn-lg'><span class='sn-bd fb'>F</span><div><h4>Son 15 dakika</h4><p>Fenerbahçe'nin yedek kulübesi, Galatasaray'ın son çeyreği.</p></div></div>
+        <p class="sn-etk"><b>Fenerbahçe:</b> Mu Munteanu, Al Alves, Bo Bowen, Ka Kaya, Nd Ndzana, Ot Otu, Tü Türkoğlu, Bş Busem Şeker, St Stašková, Kj Kaján, Ng Ngah.<br><b>Galatasaray:</b> Mo Morais, Ke Keskin, Kr Karataş, Co Costa, Gb Gbedjissi, Fo Foederer, Ch Chang Jang, To Topçu, Si Silva, Pe Pekel, Pr Prieto.</p>
+      </div>
+    </div>
+
+    <h3 class="vm-ara" id="guclu-zayif">Güçlü ve zayıf yanlar</h3>
+    <div class="vm-tiles">
+      <div><b>22 / 34</b><span>Fenerbahçe gollerinin ikinci yarıda gelenleri</span></div>
+      <div><b>26 / 46</b><span>Galatasaray gollerinin ilk yarıda gelenleri</span></div>
+      <div><b>14</b><span>Fenerbahçe'nin yedekten gelen golü</span></div>
+      <div><b>18 – 3</b><span>sarı kart: Galatasaray (9 maç) – Fenerbahçe (7 maç)</span></div>
+    </div>
+    <figure class="vm-graf">
+      <div class="vm-gb"><b>Goller ne zaman geliyor?</b><span class="lg"><i class="fb"></i>Fenerbahçe (7 maç)</span><span class="lg"><i class="gs"></i>Galatasaray (9 maç)</span></div>
+      <div class="grafik-k"><svg class='grafik' viewBox='0 0 640 250' role='img' aria-label='15 dakikalık dilimlere göre atılan goller: Fenerbahçe 2, 4, 6, 3, 10, 9; Galatasaray 9, 6, 11, 10, 2, 8'><line class='gz' x1='40' x2='630' y1='210.0' y2='210.0'/><text class='gt' x='32' y='214.0' text-anchor='end'>0</text><line class='gz' x1='40' x2='630' y1='148.7' y2='148.7'/><text class='gt' x='32' y='152.7' text-anchor='end'>4</text><line class='gz' x1='40' x2='630' y1='87.3' y2='87.3'/><text class='gt' x='32' y='91.3' text-anchor='end'>8</text><line class='gz' x1='40' x2='630' y1='26.0' y2='26.0'/><text class='gt' x='32' y='30.0' text-anchor='end'>12</text><line class='ga' x1='335.0' x2='335.0' y1='18' y2='210'/><text class='gt' x='341.0' y='24'>2. yarı</text><text class='gt' x='329.0' y='24' text-anchor='end'>1. yarı</text><rect class='gb fb' x='61.7' y='179.3' width='26' height='30.7' rx='3'/><text class='gv' x='74.7' y='173.3' text-anchor='middle'>2</text><rect class='gb gs' x='90.7' y='72.0' width='26' height='138.0' rx='3'/><text class='gv' x='103.7' y='66.0' text-anchor='middle'>9</text><text class='gt' x='89.2' y='228' text-anchor='middle'>1-15</text><rect class='gb fb' x='160.0' y='148.7' width='26' height='61.3' rx='3'/><text class='gv' x='173.0' y='142.7' text-anchor='middle'>4</text><rect class='gb gs' x='189.0' y='118.0' width='26' height='92.0' rx='3'/><text class='gv' x='202.0' y='112.0' text-anchor='middle'>6</text><text class='gt' x='187.5' y='228' text-anchor='middle'>16-30</text><rect class='gb fb' x='258.3' y='118.0' width='26' height='92.0' rx='3'/><text class='gv' x='271.3' y='112.0' text-anchor='middle'>6</text><rect class='gb gs' x='287.3' y='41.3' width='26' height='168.7' rx='3'/><text class='gv' x='300.3' y='35.3' text-anchor='middle'>11</text><text class='gt' x='285.8' y='228' text-anchor='middle'>31-45</text><rect class='gb fb' x='356.7' y='164.0' width='26' height='46.0' rx='3'/><text class='gv' x='369.7' y='158.0' text-anchor='middle'>3</text><rect class='gb gs' x='385.7' y='56.7' width='26' height='153.3' rx='3'/><text class='gv' x='398.7' y='50.7' text-anchor='middle'>10</text><text class='gt' x='384.2' y='228' text-anchor='middle'>46-60</text><rect class='gb fb' x='455.0' y='56.7' width='26' height='153.3' rx='3'/><text class='gv' x='468.0' y='50.7' text-anchor='middle'>10</text><rect class='gb gs' x='484.0' y='179.3' width='26' height='30.7' rx='3'/><text class='gv' x='497.0' y='173.3' text-anchor='middle'>2</text><text class='gt' x='482.5' y='228' text-anchor='middle'>61-75</text><rect class='gb fb' x='553.3' y='72.0' width='26' height='138.0' rx='3'/><text class='gv' x='566.3' y='66.0' text-anchor='middle'>9</text><rect class='gb gs' x='582.3' y='87.3' width='26' height='122.7' rx='3'/><text class='gv' x='595.3' y='81.3' text-anchor='middle'>8</text><text class='gt' x='580.8' y='228' text-anchor='middle'>76-90+</text></svg></div>
+      <figcaption>15 dakikalık dilimlerde atılan goller; uzatmalar son dilimde. Galatasaray ilk yarıda, Fenerbahçe ikinci yarıda daha üretken. Galatasaray'ın en az gol attığı dilim (61-75), Fenerbahçe'nin en çok attığı dilim.</figcaption>
+    </figure>
+    <div class="gz-izgara">
+      <div class='gk fb iyi'><div class='gk-b'><b>Fenerbahçe · güçlü yanlar</b><span>Veride öne çıkanlar</span></div><div class='gm'><h4>Kalesini kapatıyor</h4><p>7 maçta yalnızca 1 gol yedi (44', Yüksekova deplasmanı). Arkada iki takımın en yüksek notlu stoperi Bowen (BB), önünde Otu var.</p><p class='ev'>1 gol / 7 maç · Bowen: Markaj AB, Önsezi AA, Liderlik AB · Otu: Güç AB, Markaj BB</p></div><div class='gm'><h4>İkinci yarı takımı</h4><p>34 golün 22'si ikinci yarıda, 9'u 75. dakikadan sonra geldi. Maç uzadıkça Fenerbahçe güçleniyor.</p><p class='ev'>1. yarı 12 gol · 2. yarı 22 gol · 61-75 arası 10 gol</p></div><div class='gm'><h4>Derin kulübe</h4><p>Gollerin 14'ü yedekten gelen oyunculardan; 15 farklı oyuncu gol attı. Marie Ngah 52 dakikada bir gol atıyor.</p><p class='ev'>Yedekten 14 / 34 gol · Ngah 4 gol / 209 dk · Alayont, Göksu, Uraz yedekten gol buldu</p></div><div class='gm'><h4>Büyük maçta kayıpsız</h4><p>Üst sıradaki rakiplerle iki maçın ikisini de gol yemeden kazandı. Kart da görmüyor.</p><p class='ev'>FOMGET 2-0, Beşiktaş deplasmanı 3-0 · 7 maçta 3 sarı kart</p></div></div>
+      <div class='gk fb kotu'><div class='gk-b'><b>Fenerbahçe · zayıf yanlar</b><span>Galatasaray'ın hedefleyebileceği yerler</span></div><div class='gm'><h4>Kalecinin ayak oyunu</h4><p>Munteanu'nun ayakla kısa oyun kurma notu DD. Galatasaray baskı yaparsa kısa çıkış riskli; çıkış yolu elle ya da degajla uzun top.</p><p class='ev'>Munteanu: Ayak ile Oyun Kurma (Kısa) DD, Ayakla Kontrol CD · Elle Oyun Kurma BC, Degaj BC</p></div><div class='gm'><h4>Stoperlerin hızı</h4><p>İki stoper de yavaş. Arkaya atılan toplar ve Jéssica Silva'nın çizgiden içeri girişleri tehlikeli.</p><p class='ev'>Bowen ve Kaya: Sürat CD · Silva: Hızlanma AA, Sürat AB</p></div><div class='gm'><h4>Kanat savunması</h4><p>Sarı-Lacivert yorumcumuz da söyledi: kanatlarda savunma sıkıntısı var. Bekler hücumda iyi, savunmada orta.</p><p class='ev'>Alves: Top Kapma DD · Ndzana: Markaj CD, Güç CD · Ndzana scout notu: durağan ikili mücadele zayıf</p></div><div class='gm'><h4>Yavaş başlıyor, orta saha üretmiyor</h4><p>Gollerin yalnızca 6'sı ilk 30 dakikada. Merkezde oyunu açacak görüş zayıf; yaratıcılık Kaján'a kalıyor.</p><p class='ev'>İlk 30 dk: 6 gol · Görüş: Otu CD, Türkoğlu CD, Abideen DD · Kaján BB</p></div></div>
+      <div class='gk gs iyi'><div class='gk-b'><b>Galatasaray · güçlü yanlar</b><span>Veride öne çıkanlar</span></div><div class='gm'><h4>Erken vuruyor</h4><p>46 golün 26'sı ilk yarıda, 15'i ilk 30 dakikada geldi. Galatasaray maçı erken koparmaya çalışıyor.</p><p class='ev'>1-15: 9 gol · 31-45: 11 gol · 1. yarı 26 / 46</p></div><div class='gm'><h4>Prieto</h4><p>16 golle gol krallığı yarışında ikinci (lider 17). 39 dakikada bir gol atıyor; Galatasaray gollerinin üçte biri onun.</p><p class='ev'>16 / 46 gol · Bitiricilik AB, Kafa Vuruşu BB (3 kafa golü), Soğukkanlılık BB</p></div><div class='gm'><h4>Kanatta bire bir</h4><p>Jéssica Silva iki ilk 11'in en yüksek genel notuna sahip. Sol bekte oynayan Gbedjissi'nin Sürat notu AA.</p><p class='ev'>Silva: genel AB, İlk Kontrol AA, Hızlanma AA · Gbedjissi: Sürat AA, Dayanıklılık AB</p></div><div class='gm'><h4>Kale ve liderlik</h4><p>Morais ve Costa arkada hem kalite hem liderlik getiriyor. Üst sıradaki rakiplere karşı yenilmedi.</p><p class='ev'>Morais: genel BB, İletişim AA, Alan Hakimiyeti AB · Costa: Liderlik A+, Markaj AB · üst sıraya karşı 1G 2B, 7-1</p></div></div>
+      <div class='gk gs kotu'><div class='gk-b'><b>Galatasaray · zayıf yanlar</b><span>Fenerbahçe'nin hedefleyebileceği yerler</span></div><div class='gm'><h4>Bekler aslında kanat</h4><p>Sarı-Kırmızı yorumcumuzun en büyük endişesi veride de var: iki bek de savunmada zayıf notlara sahip.</p><p class='ev'>Keskin: Konumlanma DE, Markaj DD, Güç EE · Gbedjissi: Konumlanma DE, Top Kapma DD</p></div><div class='gm'><h4>Yavaş stoperler</h4><p>Karataş ve Costa'nın hızlanma notları düşük. Busem ve Kaján'ın derin koşuları bu ikiliyi zorlar.</p><p class='ev'>Karataş: Sürat DE, Hızlanma DD · Costa: Hızlanma CD · Busem: Sürat BB · Kaján: Hızlanma BC</p></div><div class='gm'><h4>İkinci yarıda düşüş</h4><p>61-75 arasında 9 maçta yalnızca 2 gol attı; yediği 4 golün 2'si 75. dakikadan sonra. Prieto'nun 16 golünün hepsi 57. dakikadan önce.</p><p class='ev'>61-75: 2 gol · yenilen: 27', 39', 77', 86' · Prieto başladığı 8 maçın 4'ünde 61. dakikaya kadar oyundan çıktı</p></div><div class='gm'><h4>Kart ve savunma katkısı</h4><p>9 maçta 18 sarı kart: derbide hakemin çizgisi önemli. Kanat oyuncularının geriye katkısı düşük.</p><p class='ev'>18 sarı / 9 maç (Fenerbahçe 3 / 7) · Pekel: Markaj EE, Top Kapma EE · Silva: Markaj DE</p></div></div>
+    </div>
+    <p class="vm-not"><b>Veri notu:</b> Pas, şut, koşu ya da pozisyon verisi yok. Bu bölüm scout ekibinin nitelik notlarına ve TFF maç raporlarına (ilk 11, dakika, gol dakikası, gol türü, kart) dayanıyor. İlk 11'ler ve senaryolar tahmindir; üst sıradaki rakipler 9. hafta sonundaki ilk altı takımdır.</p>
+  </section>
+  <script>window.__SN={"SC":{"A": {"title": "Jéssica Silva – Colette Ndzana", "tag": "GS", "focus": "Si", "kale": "FENERBAHÇE KALESİ", "show": ["Si", "Pr", "Pe", "To", "Ch", "Nd", "Bw", "Ky", "Al", "Mu", "Ot"], "init": {"Mu": [170, 28], "Al": [84, 118], "Bw": [140, 100], "Ky": [200, 100], "Nd": [256, 150], "Ot": [176, 168], "Si": [262, 198], "Pr": [170, 142], "Pe": [92, 172], "To": [196, 222], "Ch": [138, 240]}, "ball": [204, 213], "steps": [{"dur": 1.0, "moves": {"Nd": [258, 160]}, "ball": [270, 189], "call": null, "text": "Topçu topu sağ kanatta Jéssica Silva'ya veriyor. Karşısında Colette Ndzana. Silva'nın İlk Kontrol notu AA, Top Sürme notu AB: ilk 11'deki en yüksek genel not (AB) onun."}, {"dur": 1.2, "moves": {"Si": [286, 128], "Nd": [268, 146]}, "ball": [294, 119], "call": "BİRE BİR", "text": "İlk dokunuşla topu Ndzana'nın dışına itiyor ve hızlanıyor (Hızlanma AA, Sürat AB). Ndzana da hızlı (Sürat BB), ama Markaj ve Güç notları CD: omuz omuza mücadelede geride kalıyor."}, {"dur": 1.1, "moves": {"Si": [290, 80], "Ky": [232, 78], "Bw": [154, 72], "Pr": [172, 62], "Pe": [118, 66], "Al": [100, 84]}, "ball": [298, 71], "call": null, "text": "Kaya kapatmaya çıkıyor, Bowen Prieto'yu tutuyor. Ceza sahasında iki seçenek: Prieto penaltı noktasında, Pekel uzak direğe geliyor."}, {"dur": 0.9, "moves": {"Bw": [188, 72]}, "ball": [180, 53], "call": null, "text": "Silva yerden geri çeviriyor. Prieto bu sezon 16 gol attı, 39 dakikada bir. Bitiricilik notu AB."}, {"dur": 0.7, "moves": {"Mu": [182, 30]}, "ball": [194, 12], "call": null, "text": "Tek dokunuş. Bu topa Bowen önce gelirse pozisyon biter: Bowen'ın Önsezi notu AA, Markaj notu AB. Bu düelloyu kazanan taraf, Tarafsız yorumcumuzun dediği gibi maçın gidişatını belirler."}]}, "B": {"title": "Kaján, Keskin'in arkasında", "tag": "FB", "focus": "Kj", "kale": "GALATASARAY KALESİ", "show": ["Mo", "Ke", "Kr", "Co", "Gb", "Ch", "Fo", "Ot", "Kj", "St", "Bs", "Tu"], "init": {"Mo": [170, 28], "Ke": [72, 214], "Kr": [142, 100], "Co": [200, 100], "Gb": [262, 124], "Ch": [150, 214], "Fo": [214, 198], "Ot": [170, 242], "Kj": [86, 188], "St": [176, 150], "Bs": [256, 182], "Tu": [216, 240]}, "ball": [158, 205], "steps": [{"dur": 1.0, "moves": {"Ot": [156, 222], "Ch": [146, 232]}, "ball": [164, 213], "call": null, "text": "Galatasaray atakta, sağ bek Elif Keskin yukarı çıkmış (scout notu: kanattan bindirme yapar). Regina Otu topu Chang Jang'dan kapıyor: Otu'nun Güç notu AB, Chang Jang'ınki DE."}, {"dur": 1.3, "moves": {"Kj": [84, 112], "Ke": [80, 176]}, "ball": [92, 103], "call": "ARKA!", "text": "Otu'nun ilk pası Keskin'in boşalttığı alana. Keskin aslında kanat oyuncusu (scout: RWB/RWF); Konumlanma notu DE, Markaj notu DD. Kaján'ın Topsuz Alan notu BB."}, {"dur": 1.1, "moves": {"Kj": [112, 76], "Kr": [124, 84], "St": [178, 62], "Co": [192, 68], "Bs": [248, 98], "Gb": [252, 108]}, "ball": [120, 67], "call": null, "text": "Kaján sol ayaklı. İçeri kat edip Karataş'ı üstüne çekiyor (Karataş'ın Hızlanma notu DD). Stašková ceza sahasında, Busem karşı taraftan koşuyor."}, {"dur": 0.8, "moves": {"Mo": [160, 32]}, "ball": [151, 12], "call": null, "text": "Kaján'ın Bitiricilik notu BB. Bu sezonki üç golünün üçü de 69. dakikadan sonra geldi (69', 81', 94'). Sarı-Kırmızı yorumcumuz da Galatasaray'ın en kritik açığı olarak bu bölgeyi gösterdi."}]}, "C": {"title": "Galatasaray basarsa: Munteanu'nun çıkışı", "tag": "İKİ TARAF", "focus": "Mu", "kale": "FENERBAHÇE KALESİ", "show": ["Mu", "Bw", "Ky", "Al", "Nd", "Ot", "St", "Tu", "Pr", "Pe", "Si", "To", "Ch"], "init": {"Mu": [170, 32], "Bw": [116, 66], "Ky": [224, 66], "Al": [56, 106], "Nd": [284, 106], "Ot": [170, 116], "St": [176, 284], "Tu": [236, 244], "Pr": [170, 100], "Pe": [94, 124], "Si": [250, 124], "To": [170, 154], "Ch": [118, 176]}, "ball": [178, 23], "steps": [{"dur": 1.0, "moves": {"Pr": [146, 74], "Si": [232, 86], "To": [174, 128]}, "ball": [178, 23], "call": null, "text": "Fenerbahçe kaleden kısa kurmak istiyor, Galatasaray basıyor: Prieto Bowen'a giden yolu kapatıyor, Silva Kaya'ya çıkıyor (Silva'nın Çalışkanlık notu AA), Topçu Otu'yu tutuyor."}, {"dur": 0.9, "moves": {"Pe": [96, 96], "Ot": [180, 104]}, "ball": [178, 23], "call": "UZUN!", "text": "Munteanu'nun ayakla kısa oyun kurma notu DD, ayakla kontrol notu CD: baskı altında kısa pas riskli. Ama elle ve degajla oyun kurma notları BC."}, {"dur": 1.4, "moves": {"St": [176, 278]}, "ball": [184, 269], "call": null, "text": "Çıkış yolu uzun top. Stašková 1,80 m; Güç ve Kafa Vuruşu notları BB. Scout notu: 'Kaleye sırtı dönük oynayabilir, istasyon olabilir.'"}, {"dur": 1.0, "moves": {"Tu": [216, 252], "Ch": [150, 214]}, "ball": [224, 243], "call": null, "text": "Stašková topu indirip Türkoğlu'na bırakıyor; baskıyı aşan Fenerbahçe, Galatasaray'ın boşalttığı orta alanda. Sarı-Lacivert yorumcumuz da Fenerbahçe'nin bu tuzağa düşmeyeceğini söylüyor."}]}, "D": {"title": "Busem Şeker – Aude Gbedjissi", "tag": "FB", "focus": "Bs", "kale": "GALATASARAY KALESİ", "show": ["Mo", "Ke", "Kr", "Co", "Gb", "Fo", "Bs", "Tu", "St", "Kj"], "init": {"Mo": [170, 28], "Ke": [84, 112], "Kr": [142, 96], "Co": [198, 96], "Gb": [262, 214], "Fo": [214, 190], "Bs": [248, 204], "Tu": [196, 242], "St": [170, 150], "Kj": [86, 150]}, "ball": [204, 233], "steps": [{"dur": 1.0, "moves": {"Tu": [204, 228], "Gb": [270, 230]}, "ball": [212, 219], "call": null, "text": "Galatasaray'ın sol beki Aude Gbedjissi bindirmiş. Gbedjissi aslında sol kanat (scout: LWF): Sürat notu AA, ama Konumlanma DE, Top Kapma DD. Türkoğlu topu kazanıyor."}, {"dur": 1.3, "moves": {"Bs": [270, 120], "Gb": [262, 178]}, "ball": [278, 111], "call": "ARKA!", "text": "Busem ilk koşusunu Gbedjissi'nin arkasına yapıyor. Sürat ve Hızlanma notları BB, Dayanıklılık AB: bu koşuyu 90 dakika boyunca tekrar edebilir."}, {"dur": 1.1, "moves": {"Bs": [262, 74], "Co": [228, 80], "St": [172, 70], "Kr": [154, 74], "Kj": [110, 80], "Ke": [112, 92]}, "ball": [270, 65], "call": null, "text": "Costa kapatmaya çıkıyor (Markaj AB, Liderlik A+). Busem'in Orta Yapma notu DD: yüksek orta yerine yerden geri çevirmek daha doğru."}, {"dur": 0.8, "moves": {"St": [174, 66]}, "ball": [182, 57], "call": null, "text": "Yerden pas Stašková'ya. Stašková'nın 7 golünün 5'i ilk yarıda geldi; Bitiricilik notu AB."}, {"dur": 0.7, "moves": {"Mo": [162, 34]}, "ball": [188, 12], "call": null, "text": "Karşısında Patrícia Morais: Alan Hakimiyeti ve Çizgi Hakimiyeti AB, İletişim AA. Tarafsız yorumcumuzun ilk kilit eşleşmesi: Stašková – Morais."}]}, "E": {"title": "Duran top, ikinci top: Ebru Topçu", "tag": "GS", "focus": "To", "kale": "FENERBAHÇE KALESİ", "show": ["Mu", "Bw", "Ky", "Ot", "Tu", "Al", "Kj", "Pe", "Kr", "Co", "Pr", "Fo", "To"], "init": {"Mu": [168, 24], "Bw": [196, 42], "Ky": [138, 46], "Ot": [228, 56], "Tu": [112, 62], "Al": [170, 84], "Kj": [110, 132], "Pe": [322, 16], "Kr": [184, 56], "Co": [150, 60], "Pr": [240, 70], "Fo": [124, 82], "To": [206, 132]}, "ball": [312, 22], "steps": [{"dur": 1.1, "moves": {"Kr": [190, 48], "Bw": [198, 40]}, "ball": [206, 31], "call": null, "text": "Galatasaray kornerde. Karataş (Kafa Vuruşu BC) ve Prieto (Kafa Vuruşu BB, bu sezon 3 kafa golü) ceza sahasında. İlk topu Bowen uzaklaştırıyor: Kafa Vuruşu ve Zıplama notları BB."}, {"dur": 1.0, "moves": {"To": [204, 124], "Ot": [220, 100]}, "ball": [212, 115], "call": null, "text": "Top ceza sahası dışına düşüyor. Ebru Topçu orada bekliyor: Görüş AB, Uzaktan Şut BC, Duran Top BB."}, {"dur": 0.8, "moves": {"Mu": [156, 28]}, "ball": [151, 12], "call": "ŞUT!", "text": "İlk dokunuşta uzak köşeye. Sarı-Kırmızı yorumcumuz bunu söyledi: denge maçlarında kilidi Topçu'nun orta ve uzun mesafeli şutları açabilir. Munteanu'nun Çizgi Hakimiyeti notu BC."}]}, "F": {"title": "Son 15 dakika: yedek kulübesi", "tag": "FB", "focus": "Ng", "kale": "GALATASARAY KALESİ", "show": ["Mo", "Ke", "Kr", "Co", "Gb", "Fo", "Kj", "Ng", "Bs", "Tu"], "init": {"Mo": [170, 28], "Ke": [86, 112], "Kr": [140, 92], "Co": [198, 92], "Gb": [256, 110], "Fo": [170, 150], "Kj": [78, 172], "Ng": [196, 170], "Bs": [262, 168], "Tu": [150, 222]}, "ball": [86, 163], "steps": [{"dur": 1.0, "moves": {"Kj": [70, 120], "Ke": [88, 130]}, "ball": [78, 111], "call": null, "text": "Dakika 80. Fenerbahçe 34 golünün 9'unu 75. dakikadan sonra attı, 14'ü yedekten gelen oyunculardan. Galatasaray'ın yediği 4 golün 2'si 75. dakikadan sonra geldi (77', 86')."}, {"dur": 1.1, "moves": {"Kj": [78, 80], "Ke": [92, 92], "Ng": [168, 64], "Kr": [150, 74], "Co": [196, 70]}, "ball": [86, 71], "call": null, "text": "Kaján çizgiye iniyor. Oyuna sonradan giren Marie Ngah ön direğe koşuyor (Hızlanma BB); Karataş'ın Hızlanma notu DD."}, {"dur": 0.8, "moves": {}, "ball": [176, 55], "call": "ÖN DİREK", "text": "Yerden ön direğe."}, {"dur": 0.6, "moves": {"Mo": [160, 32]}, "ball": [178, 12], "call": null, "text": "Ngah bu sezon 209 dakikada 4 gol attı: 52 dakikada bir, takımın en iyi oranı."}]}},"DEF":{"Mu": ["Mu", "fb", 9], "Al": ["Al", "fb", 9], "Bw": ["Bo", "fb", 9], "Ky": ["Ka", "fb", 9], "Nd": ["Nd", "fb", 9], "Ot": ["Ot", "fb", 9], "Tu": ["Tü", "fb", 9], "Bs": ["Bş", "fb", 9], "St": ["St", "fb", 9], "Kj": ["Kj", "fb", 9], "Ng": ["Ng", "fb", 9], "Mo": ["Mo", "gs", 9], "Ke": ["Ke", "gs", 9], "Kr": ["Kr", "gs", 9], "Co": ["Co", "gs", 9], "Gb": ["Gb", "gs", 9], "Fo": ["Fo", "gs", 9], "Ch": ["Ch", "gs", 9], "To": ["To", "gs", 9], "Si": ["Si", "gs", 9], "Pe": ["Pe", "gs", 9], "Pr": ["Pr", "gs", 9]}};</script>
+<!-- /VERI-MASASI -->
+
   <div class="paylas">
     <span class="y">PAYLAŞ</span>
     <a id="p-wa" href="https://wa.me/?text=Derbi%20%C3%96ncesi%20%C3%9C%C3%A7%20Bak%C4%B1%C5%9F%3A%20Fenerbah%C3%A7e%20%E2%80%93%20Galatasaray%20https%3A%2F%2Fblog.womenfootballscouting.com%2Ffenerbahce-galatasaray-derbi%2F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
@@ -379,5 +555,93 @@ footer a{color:var(--soluk)}
   });
 })();
 </script>
+<!-- VERI-MASASI-JS -->
+<script>
+(function(){
+  var D=window.__SN; if(!D) return;
+  var SC=D.SC, DEF=D.DEF, NS="http://www.w3.org/2000/svg";
+  var svg=document.getElementById('sn-svg'); if(!svg) return;
+  var actors={}, ballEl, trailLayer, callG, callTx, callRect, ballPos={x:0,y:0};
+  var reduce=false; try{reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+  var cur='A', stepIdx=-1, raf=null, playing=false, timer=null;
+  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+  var lay=document.getElementById('sn-actors');
+  Object.keys(DEF).forEach(function(id){
+    var d=DEF[id], g=el('g',{},lay);
+    var ring=el('circle',{r:d[2]+4.5,cx:0,cy:0,'class':'a-ring'},g); ring.style.display='none';
+    el('circle',{r:d[2],cx:0,cy:0,'class':'a-'+d[1]},g);
+    var t=el('text',{x:0,y:3.3,'class':'alab '+d[1]},g); t.textContent=d[0];
+    actors[id]={g:g,ring:ring,x:0,y:0};
+  });
+  trailLayer=document.getElementById('sn-trails');
+  ballEl=el('circle',{r:4.2,'class':'ball'},document.getElementById('sn-ballL'));
+  callG=document.getElementById('sn-callb'); callRect=callG.querySelector('rect'); callTx=callG.querySelector('text');
+  function place(id,x,y){var a=actors[id];a.x=x;a.y=y;a.g.setAttribute('transform','translate('+x+','+y+')');}
+  function placeBall(x,y){ballPos.x=x;ballPos.y=y;ballEl.setAttribute('cx',x);ballEl.setAttribute('cy',y);}
+  function showCall(txt){
+    if(!txt){callG.classList.remove('on');return;}
+    callTx.textContent=txt; var w=Math.max(46,txt.length*7.6+18);
+    callRect.setAttribute('width',w);callRect.setAttribute('x',-w/2);
+    var f=actors[SC[cur].focus]; var dx=f.x>230?-(w/2+8):(f.x<110?(w/2+8):0);
+    callG.setAttribute('transform','translate('+(f.x+dx)+','+Math.max(16,f.y-22)+')'); callG.classList.add('on');
+  }
+  function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;}
+  function cancel(){if(raf)cancelAnimationFrame(raf);raf=null;if(timer)clearTimeout(timer);timer=null;playing=false;document.getElementById('sn-play').textContent='Oynat';}
+  function setup(key){
+    var s=SC[key]; cur=key; stepIdx=-1; cancel();
+    Object.keys(actors).forEach(function(id){
+      var on=s.show.indexOf(id)>-1; actors[id].g.style.display=on?'':'none';
+      actors[id].ring.style.display=(id===s.focus)?'':'none';
+      if(on){var p=s.init[id];place(id,p[0],p[1]);}
+    });
+    placeBall(s.ball[0],s.ball[1]); while(trailLayer.firstChild)trailLayer.removeChild(trailLayer.firstChild);
+    document.getElementById('sn-kale').textContent='↑ '+s.kale;
+    showCall(null); caption(-1); dots(-1);
+    document.querySelectorAll('.sn-tab').forEach(function(t){t.setAttribute('aria-selected',t.dataset.k==key?'true':'false');});
+    document.getElementById('sn-lg-title').textContent=key+' · '+s.title;
+  }
+  function caption(i){
+    var s=SC[cur], c=document.getElementById('sn-cap');
+    if(i<0){c.innerHTML='<div class="st">HAZIR · '+s.tag+'</div><b>'+s.title+'</b><p>Oynat’a bas ya da İleri ile adım adım izle.</p>';return;}
+    var st=s.steps[i]; c.innerHTML='<div class="st">ADIM '+(i+1)+' / '+s.steps.length+' · '+s.tag+'</div><b>'+s.title+'</b><p>'+st.text+'</p>';
+  }
+  function dots(i){var d=document.getElementById('sn-dots');d.innerHTML='';SC[cur].steps.forEach(function(_,k){var e=document.createElement('i');if(k<=i)e.className='on';d.appendChild(e);});}
+  function trail(x1,y1,x2,y2){el('path',{d:'M'+x1+' '+y1+' L'+x2+' '+y2,'class':'trail'},trailLayer);}
+  function runStep(i,instant,done){
+    var s=SC[cur], st=s.steps[i]; stepIdx=i;
+    var from={},to={}, b0={x:ballPos.x,y:ballPos.y}, b1={x:st.ball[0],y:st.ball[1]};
+    Object.keys(st.moves).forEach(function(id){from[id]={x:actors[id].x,y:actors[id].y};to[id]=st.moves[id];});
+    caption(i); dots(i);
+    if(b0.x!=b1.x||b0.y!=b1.y)trail(b0.x,b0.y,b1.x,b1.y);
+    if(instant){Object.keys(to).forEach(function(id){place(id,to[id][0],to[id][1]);});placeBall(b1.x,b1.y);showCall(st.call);if(done)done();return;}
+    var t0=null,dur=st.dur*1000; showCall(null);
+    function frame(ts){
+      if(t0===null)t0=ts; var k=Math.min(1,(ts-t0)/dur), e=ease(k);
+      Object.keys(to).forEach(function(id){place(id,from[id].x+(to[id][0]-from[id].x)*e,from[id].y+(to[id][1]-from[id].y)*e);});
+      placeBall(b0.x+(b1.x-b0.x)*e,b0.y+(b1.y-b0.y)*e);
+      if(k<1){raf=requestAnimationFrame(frame);}else{raf=null;showCall(st.call);if(done)done();}
+    }
+    raf=requestAnimationFrame(frame);
+  }
+  function play(){
+    if(playing){cancel();return;}
+    var s=SC[cur]; if(stepIdx>=s.steps.length-1)setup(cur);
+    playing=true; document.getElementById('sn-play').textContent='Duraklat';
+    var i=stepIdx+1;
+    (function next(){
+      if(!playing)return; if(i>=s.steps.length){cancel();document.getElementById('sn-play').textContent='Tekrar';return;}
+      runStep(i,reduce,function(){i++;timer=setTimeout(next,reduce?1800:650);});
+    })();
+  }
+  function stepNext(){cancel(); var s=SC[cur]; var i=stepIdx+1; if(i>=s.steps.length){setup(cur);return;} runStep(i,true);}
+  document.querySelectorAll('.sn-tab').forEach(function(t){t.addEventListener('click',function(){setup(t.dataset.k);if(!reduce)play();});});
+  document.getElementById('sn-play').addEventListener('click',play);
+  document.getElementById('sn-next').addEventListener('click',stepNext);
+  document.getElementById('sn-reset').addEventListener('click',function(){setup(cur);});
+  setup('A');
+  if(!reduce){try{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!io._d){io._d=true;setTimeout(play,500);}});},{threshold:.5});io.observe(svg);}catch(e){}}
+})();
+</script>
+<!-- /VERI-MASASI-JS -->
 </body>
 </html>
