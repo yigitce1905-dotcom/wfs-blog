@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data | Women&#x27;s Football Scouting</title>
+<meta name="description" content="What do xG, npxG, xA and progressive actions tell you? A guide with charts and real examples from StatsBomb open data on Women&#x27;s Euro 2025 and the 2023 World Cup.">
+<link rel="canonical" href="https://blog.womenfootballscouting.com/en/xg-euro-2025/">
+<link rel="alternate" hreflang="tr" href="https://blog.womenfootballscouting.com/xg-euro-2025/">
+<link rel="alternate" hreflang="en" href="https://blog.womenfootballscouting.com/en/xg-euro-2025/">
+<link rel="alternate" hreflang="x-default" href="https://blog.womenfootballscouting.com/xg-euro-2025/">
+<link rel="alternate" type="application/rss+xml" title="Women's Football Scouting Blog" href="https://blog.womenfootballscouting.com/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:site_name" content="Women's Football Scouting">
+<meta property="og:title" content="What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data">
+<meta property="og:description" content="How do you measure the chance that a shot goes in? xG, npxG, xA and progressive actions explained with 2,511 shots of StatsBomb open data: who beat their expected goals and who fell short.">
+<meta property="og:url" content="https://blog.womenfootballscouting.com/en/xg-euro-2025/">
+<meta property="og:image" content="https://blog.womenfootballscouting.com/en/xg-euro-2025/kapak.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="xG: What Are Expected Goals? With Euro 2025 and 2023 World Cup data — cover image, StatsBomb open data">
+<meta property="article:published_time" content="2026-11-14T20:00:00+03:00">
+<meta property="article:modified_time" content="2026-11-14T20:00:00+03:00">
+<meta property="article:section" content="Data Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data">
+<meta name="twitter:description" content="How do you measure the chance that a shot goes in? xG, npxG, xA and progressive actions explained with 2,511 shots of StatsBomb open data: who beat their expected goals and who fell short.">
+<meta name="twitter:image" content="https://blog.womenfootballscouting.com/en/xg-euro-2025/kapak.png">
+<meta name="theme-color" content="#0c0f1e">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data", "description": "What do xG, npxG, xA and progressive actions tell you? A guide with charts and real examples from StatsBomb open data on Women's Euro 2025 and the 2023 World Cup.", "image": ["https://blog.womenfootballscouting.com/en/xg-euro-2025/kapak.png", "https://blog.womenfootballscouting.com/en/xg-euro-2025/kapak@2x.png"], "datePublished": "2026-11-14T20:00:00+03:00", "dateModified": "2026-11-14T20:00:00+03:00", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://blog.womenfootballscouting.com/en/xg-euro-2025/"}, "url": "https://blog.womenfootballscouting.com/en/xg-euro-2025/", "wordCount": 1560, "author": {"@type": "Organization", "name": "WFS Analysis Desk", "url": "https://blog.womenfootballscouting.com/en/"}, "publisher": {"@type": "Organization", "name": "Women's Football Scouting", "url": "https://womenfootballscouting.com", "logo": {"@type": "ImageObject", "url": "https://blog.womenfootballscouting.com/logo.png"}}, "about": ["Expected goals", "UEFA Women's Euro 2025", "FIFA Women's World Cup 2023", "Football analytics"], "keywords": "xG, expected goals, npxG, xA, progressive passes, Women's Euro 2025, Women's World Cup 2023, StatsBomb, women's football", "isBasedOn": {"@type": "Dataset", "name": "StatsBomb Open Data", "url": "https://github.com/statsbomb/open-data", "creator": {"@type": "Organization", "name": "Hudl StatsBomb"}}, "isAccessibleForFree": true}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Blog", "item": "https://blog.womenfootballscouting.com/en/"}, {"@type": "ListItem", "position": 2, "name": "What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data", "item": "https://blog.womenfootballscouting.com/en/xg-euro-2025/"}]}
+</script>
+<style>
+
+:root{
+  --bg:#0c0f1e; --yuzey:#141933; --yuzey2:#1a2042; --cizgi:#262d57;
+  --metin:#e2e8f0; --guclu:#ffffff; --soluk:#94a3b8; --soluk2:#7c86a8;
+  --mor:#a855f7; --mor2:#c4b5fd;
+  --fb1:#0b2163; --fb2:#f7d417; --gs1:#9e1630; --gs2:#fdb913;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--metin);font:400 17px/1.72 Inter,"Segoe UI",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--mor2)}
+img{max-width:100%;height:auto;display:block}
+.disp{font-family:"Barlow Condensed","Bahnschrift","Arial Narrow",sans-serif}
+
+/* DIL-CSS */
+.bar .sag{display:flex;align-items:center;gap:8px}
+.dilsec{display:inline-flex;border:1px solid var(--cizgi);border-radius:999px;overflow:hidden}
+.dilsec a,.dilsec span{font:700 13px/1 Inter,sans-serif;letter-spacing:.06em;padding:8px 11px;text-decoration:none}
+.dilsec span{background:var(--mor);color:#fff}.dilsec a{color:var(--metin)}.dilsec a:hover{background:var(--yuzey2)}
+@media (max-width:720px){.bar a.site{display:none}}
+/* /DIL-CSS */
+/* üst bar */
+.bar{position:sticky;top:0;z-index:5;background:rgba(12,15,30,.88);backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--cizgi);padding-top:env(safe-area-inset-top,0px)}
+.bar .ic{max-width:1040px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.bar a.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.bar a.logo img{height:34px;width:auto}
+.bar .etiket{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.14em;font-size:14px;color:var(--mor2)}
+.bar a.site{font-size:14px;font-weight:600;color:var(--metin);text-decoration:none;border:1px solid var(--cizgi);
+  padding:6px 12px;border-radius:999px;white-space:nowrap}
+.bar a.site:hover{border-color:var(--mor)}
+
+main{padding:0 20px}
+.kafa{max-width:760px;margin:0 auto;padding:44px 0 0}
+.kick{display:inline-flex;gap:8px;align-items:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;
+  letter-spacing:.16em;font-size:14px;color:var(--mor2)}
+.kick i{width:6px;height:6px;border-radius:50%;background:var(--mor)}
+h1{font-family:"Barlow Condensed","Bahnschrift",sans-serif;font-weight:800;font-size:clamp(38px,7vw,62px);
+  line-height:1.02;margin:12px 0 14px;color:var(--guclu);text-wrap:balance;letter-spacing:-.005em}
+.dek{font-size:clamp(18px,2.4vw,21px);line-height:1.55;color:#cbd5e1;margin:0;text-wrap:pretty}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--soluk);font-size:14px;margin:18px 0 0}
+.meta b{color:var(--metin);font-weight:600}
+
+.kapak{max-width:1040px;margin:30px auto 0}
+.kapak img{width:100%;border-radius:14px;border:1px solid var(--cizgi)}
+
+.macbilgi{max-width:760px;margin:22px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border:1px solid var(--cizgi);border-radius:12px;overflow:hidden;background:var(--yuzey)}
+.macbilgi div{padding:12px 14px;border-left:1px solid var(--cizgi);min-width:0}
+.macbilgi div:first-child{border-left:0}
+.macbilgi small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--soluk2)}
+.macbilgi span{display:block;font-size:15px;font-weight:600;color:var(--guclu);line-height:1.35;margin-top:3px}
+
+.yazi{max-width:760px;margin:0 auto}
+.yazi p{margin:0 0 1.1em}
+.giris{margin-top:34px}
+.giris p:first-child::first-letter{font-family:"Barlow Condensed",sans-serif;font-weight:800;float:left;font-size:64px;
+  line-height:.86;margin:6px 10px 0 0;color:var(--mor2)}
+
+.not{display:flex;gap:14px;background:linear-gradient(135deg,#1b1640,#141933);border:1px solid #3d3180;
+  border-radius:12px;padding:16px 18px;margin:8px 0 0}
+.not .ik{flex:none;width:34px;height:34px;border-radius:50%;background:#2a1f63;display:grid;place-items:center}
+.not h3{margin:0 0 2px;font-size:15px;color:var(--mor2);font-weight:700}
+.not p{margin:0!important;font-size:15.5px;line-height:1.6;color:#cbd5e1}
+
+.uclu{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 0}
+.uclu a{display:block;text-decoration:none;border-radius:10px;padding:12px 14px;border:1px solid;min-width:0}
+.uclu b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:21px;letter-spacing:.03em;line-height:1.1}
+.uclu span{display:block;font-size:13px;line-height:1.45;color:#cbd5e1;margin-top:4px}
+.p-sl{--a:var(--fb2);--z:#0d2470;--k:#2b4aa8}
+.p-t{--a:var(--mor2);--z:#251a52;--k:#5b44a8}
+.p-sk{--a:var(--gs2);--z:#5c0d1c;--k:#b02a44}
+.uclu a{background:var(--z);border-color:var(--k)}
+.uclu a b{color:var(--a)}
+
+figure{margin:40px auto;max-width:960px}
+figure img{width:100%;border-radius:12px;border:1px solid var(--cizgi);background:var(--yuzey)}
+a.buyut{display:block;cursor:zoom-in}
+figcaption{max-width:760px;margin:10px auto 0;font-size:14px;color:var(--soluk);line-height:1.5}
+
+.bolum{max-width:760px;margin:56px auto 0;scroll-margin-top:76px}
+.bolum-kafa{border-radius:14px;padding:20px 22px;background:var(--z);border:1px solid var(--k);position:relative;overflow:hidden}
+.bolum-kafa::after{content:"";position:absolute;right:-30px;top:-30px;width:130px;height:130px;border-radius:50%;
+  border:18px solid var(--a);opacity:.12}
+.bolum-kafa .no{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.16em;font-size:13px;color:var(--a);opacity:.9}
+.bolum-kafa h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(32px,5vw,42px);line-height:1;
+  margin:4px 0 6px;color:var(--a)}
+.bolum-kafa p{margin:0;color:#dbe2ee;font-size:15.5px;line-height:1.55;max-width:560px}
+.sc{margin-top:26px}
+.sc .s{display:flex;gap:12px;align-items:baseline;margin:30px 0 8px}
+.sc .s .n{flex:none;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:15px;color:var(--a);
+  min-width:28px;height:28px;border-radius:7px;border:1px solid var(--k);background:var(--z);display:grid;place-items:center;
+  transform:translateY(5px)}
+.sc .s h3{margin:0;font-size:17.5px;line-height:1.5;font-weight:700;color:var(--guclu);text-wrap:pretty}
+.sc .c{padding-left:40px}
+.sc .c p{margin:0 0 .9em}
+.sc figure{margin:30px -0px}
+
+.tahmin{max-width:960px;margin:64px auto 0}
+.tahmin h2,.ara-baslik{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,40px);
+  color:var(--guclu);margin:0 0 6px;line-height:1.05}
+.tahmin > p{color:var(--soluk);margin:0 0 18px;font-size:15.5px}
+.tkart{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tk{border-radius:14px;padding:18px 18px 16px;background:var(--z);border:1px solid var(--k);min-width:0;display:flex;flex-direction:column}
+.tk .kim{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.12em;font-size:14px;color:var(--a)}
+.tk .skor{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:64px;line-height:1;color:var(--guclu);
+  margin:10px 0 4px;font-variant-numeric:tabular-nums}
+.tk .skor.yok{font-size:30px;line-height:1.1;margin:16px 0 8px;color:#dbe2ee}
+.tk p{margin:0;font-size:14.5px;line-height:1.55;color:#cbd5e1}
+
+.paylas{max-width:760px;margin:56px auto 0;border-top:1px solid var(--cizgi);padding-top:22px;display:flex;flex-wrap:wrap;
+  align-items:center;gap:10px}
+.paylas .y{font-weight:700;font-size:14px;color:var(--soluk);margin-right:6px;letter-spacing:.06em}
+.paylas a,.paylas button{font:600 14px Inter,sans-serif;color:var(--metin);background:var(--yuzey);border:1px solid var(--cizgi);
+  border-radius:999px;padding:9px 16px;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.paylas a:hover,.paylas button:hover{border-color:var(--mor)}
+.paylas svg{width:16px;height:16px;fill:currentColor}
+
+.kaynak{max-width:760px;margin:22px auto 0;font-size:13.5px;color:var(--soluk2);line-height:1.6}
+.cta{max-width:760px;margin:40px auto 0;border-radius:14px;padding:22px;background:linear-gradient(120deg,#1b1640,#151a33);
+  border:1px solid #3d3180;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.cta b{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;color:var(--guclu);line-height:1.1;display:block}
+.cta span{color:#cbd5e1;font-size:15px}
+.cta a{background:var(--mor);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:11px 18px;border-radius:10px;white-space:nowrap}
+footer{max-width:1040px;margin:56px auto 0;padding:22px 20px 34px;border-top:1px solid var(--cizgi);color:var(--soluk2);
+  font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--soluk)}
+@media (max-width:720px){
+  body{font-size:16.5px}
+  .macbilgi{grid-template-columns:1fr 1fr}
+  .macbilgi div:nth-child(3){border-left:0}
+  .macbilgi div:nth-child(n+3){border-top:1px solid var(--cizgi)}
+  .uclu,.tkart{grid-template-columns:1fr}
+  .sc .c{padding-left:0}
+  .bar .etiket{display:none}
+  figure{margin:30px -4px}
+}
+
+/* XG-YAZISI */
+.yazi h2{font-family:"Barlow Condensed","Bahnschrift",sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,40px);line-height:1.05;
+  color:var(--guclu);margin:60px 0 14px;scroll-margin-top:76px;text-wrap:balance}
+.yazi h2 small{display:block;font-size:14px;letter-spacing:.16em;color:var(--mor2);font-weight:700;margin-bottom:6px}
+.yazi h3{font-size:18px;line-height:1.4;color:var(--guclu);margin:28px 0 8px}
+.yazi ul{margin:0 0 1.1em;padding-left:1.25em}.yazi li{margin:0 0 .55em}
+.yazi strong{color:var(--guclu);font-weight:600}
+.yazi abbr{text-decoration:none}
+.icindekiler{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.icindekiler li{margin:0}
+.icindekiler a{display:block;font-size:14px;font-weight:600;color:var(--metin);text-decoration:none;border:1px solid var(--cizgi);
+  background:var(--yuzey);border-radius:999px;padding:7px 13px}
+.icindekiler a:hover{border-color:var(--mor)}
+.terimler{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0 0}
+.terimler div{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:12px;padding:14px 16px;min-width:0}
+.terimler b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:24px;line-height:1.05;color:var(--mor2)}
+.terimler span{display:block;font-size:14.5px;line-height:1.55;color:#cbd5e1;margin-top:4px}
+.ders{border-left:3px solid var(--mor);background:var(--yuzey);border-radius:0 12px 12px 0;padding:14px 18px;margin:6px 0 1.2em}
+.ders b{display:block;font-size:13px;letter-spacing:.12em;color:var(--mor2);font-weight:700;margin-bottom:2px}
+.ders p{margin:0!important;font-size:15.5px;line-height:1.6;color:#dbe2ee}
+figure.g{max-width:760px}
+figure.g img{border-radius:12px}
+.sb-not{display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:760px;margin:34px auto 0;padding:16px 18px;border:1px solid var(--cizgi);
+  border-radius:12px;background:var(--yuzey)}
+.sb-not p{margin:0;font-size:14px;line-height:1.6;color:#cbd5e1;flex:1 1 300px;min-width:0}
+.sb-chip{flex:none;display:inline-flex;background:#fff;border-radius:8px;padding:8px 11px}
+.sb-chip img{height:22px;width:auto;display:block}
+.not .sb-chip{padding:6px 9px;margin-top:10px}.not .sb-chip img{height:18px}
+.bilgi4{margin-top:22px}
+@media (max-width:720px){.terimler{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header class="bar"><div class="ic">
+  <a class="logo" href="https://womenfootballscouting.com/?dil=EN&ref=blog" aria-label="Women's Football Scouting home">
+    <img src="/logo.png" alt="Women's Football Scouting" width="54" height="34"><span class="etiket">BLOG</span></a>
+  <div class="sag"><div class="dilsec" role="group" aria-label="Language / Dil"><a href="/xg-euro-2025/" hreflang="tr" lang="tr">TR</a><span aria-current="true">EN</span></div><a class="site" href="https://womenfootballscouting.com/?dil=EN&ref=blog">Visit site →</a></div>
+</div></header>
+
+<main>
+<article>
+  <div class="kafa">
+    <div class="kick"><i></i>DATA GUIDE · STATSBOMB OPEN DATA</div>
+    <h1>What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data</h1>
+    <p class="dek">How do you measure the chance that a shot goes in, and is a player a good finisher or just lucky? Using 2,511 shots from Women's Euro 2025 and the 2023 World Cup, we explain expected goals (xG), non-penalty xG, expected assists (xA) and progressive actions with real examples.</p>
+    <div class="meta"><span><b>WFS Analysis Desk</b></span><span>14 November 2026</span><span>8 min read</span></div>
+  </div>
+
+  <div class="kapak">
+    <picture>
+      <source type="image/webp" srcset="kapak@2x.webp">
+      <img src="kapak@2x.png" width="2400" height="1260" alt="xG: What Are Expected Goals? With Euro 2025 and 2023 World Cup data — cover image, StatsBomb open data">
+    </picture>
+  </div>
+
+  <div class="macbilgi bilgi4" role="list"><div role="listitem"><small>DATA</small><span>Hudl StatsBomb open data</span></div><div role="listitem"><small>COVERAGE</small><span>Euro 2025 · 31 games<br>World Cup 2023 · 64 games</span></div><div role="listitem"><small>SHOTS</small><span>2,511 · shoot-outs excluded</span></div><div role="listitem"><small>DATA DATE</small><span>Last game 27 July 2025<br>summary 13 November 2026</span></div></div>
+
+  <div class="yazi giris">
+    <p>In football the scoreboard usually tells you only the outcome. A team can miss three big chances and win with one long-range strike; a striker can end a tournament without a goal and still have been in all the right places. Expected goals (xG) is the best-known way of telling those things apart.</p><p>This article uses Hudl StatsBomb's public event data: the 31 games of Euro 2025 and the 64 games of the 2023 World Cup. We first explain what xG is, then non-penalty xG, expected assists and progressive actions, each with real examples. The limits of the data and the method are at the end.</p>
+
+    <div class="not">
+      <div class="ik" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div>
+      <div><h3>About the data and licence</h3>
+      <p>This is a non-commercial, educational article based on Hudl StatsBomb open data. No raw data is shared on this page; the charts and short lists are only there to illustrate the concepts.</p>
+      <span class="sb-chip"><img src="/xg-euro-2025/statsbomb-logo.png" alt="StatsBomb" width="640" height="103"></span></div>
+    </div>
+
+    <div class="terimler"><div><b>xG</b><span>Expected goals. The probability that a shot is scored, based on the history of similar shots: a value between 0 and 1.</span></div><div><b>npxG</b><span>Non-penalty xG. What is left once penalties are removed: the shot value created in open play and set pieces.</span></div><div><b>xA</b><span>Expected assists. The xG of the shot that follows a pass, credited to the passer.</span></div><div><b>Progressive action</b><span>A completed pass or carry that moves the ball clearly closer to the opponent's goal.</span></div></div>
+    <nav aria-label="Sections of this article"><ul class="icindekiler"><li><a href="#xg-nedir">What is xG?</a></li><li><a href="#npxg">npxG</a></li><li><a href="#euro-2025">Euro 2025</a></li><li><a href="#dunya-kupasi-2023">World Cup 2023</a></li><li><a href="#xa">xA</a></li><li><a href="#ilerletici">Progressive actions</a></li><li><a href="#sinirlar">Limits of the data</a></li><li><a href="#yontem">Method</a></li></ul></nav>
+  </div>
+
+  <div class="yazi">
+    <h2 id="xg-nedir"><small>01</small>xG: the chance that a shot goes in</h2>
+    <p>Expected goals (xG) gives every shot a value between 0 and 1. The value says how often comparable shots have been scored: a 0.25 xG shot means that one in four shots taken from the same place in the same way ends up in the net. xG measures the quality of the chance, not the quality of the person shooting.</p>
+    <p>StatsBomb's model looks at the location and angle of the shot, the body part used, the type of pass that set it up, and information such as where the goalkeeper and defenders were at the moment of the shot. A player's or a team's xG is simply the sum of the values of their shots.</p>
+  </div>
+  <figure class="g" id="g-xg-haritasi">
+    <a class="buyut" href="xg-haritasi.png" target="_blank" rel="noopener" aria-label="Open full-size image">
+    <picture>
+      <source type="image/webp" srcset="xg-haritasi.webp">
+      <img src="xg-haritasi.png" width="1280" height="1284" loading="lazy" decoding="async" alt="Half-pitch map with six shooting zones, goal at the top. Six-yard box: average 0.25 xG, 25% of shots scored. Around the penalty spot: 0.14 xG, 13% scored. Front edge of the box: 0.09 xG, 11% scored. Wide areas of the box: 0.05 xG, 6% scored. Just outside the box, central: 0.04 xG, 3% scored. Longer range and tight angles: 0.01 xG, 2% scored.">
+    </picture></a>
+    <figcaption>The 2,470 non-penalty shots from Euro 2025 and the 2023 World Cup, split into six zones using StatsBomb coordinates. In every zone the average xG and the actual scoring rate are close.</figcaption>
+  </figure>
+  <div class="yazi">
+    <p>The map makes the rule plain. Shots from inside the six-yard box are worth 0.25 xG on average, and 25% of them were scored. Around the penalty spot the average drops to 0.14 xG. Step outside the box, even straight in front of goal, and it is 0.04 xG: across the two tournaments 34% of non-penalty shots came from outside the box, but they produced only 12% of the goals.</p>
+    <p>A penalty is valued at a fixed figure: 0.78 xG on average. In normal and extra time across the two tournaments 41 penalties were taken and 28 were scored. The 488 headed shots (penalties aside) averaged 0.11 xG, and 10% of them went in.</p>
+    <div class="ders"><b>REMEMBER</b><p>In every zone the average xG and the actual scoring rate are close: the model does its job. But for a single shot, xG is a probability, not an outcome.</p></div>
+    <h2 id="npxg"><small>02</small>npxG: keeping penalties apart</h2>
+    <p>A penalty is the result of a rule rather than a chance created in open play, and on its own it adds 0.78 xG. The total of whoever takes the penalties is easily inflated, so when comparing players we use non-penalty xG (npxG) and remove penalty goals from the goal count.</p>
+    <p>Two examples from Euro 2025: Ada Hegerberg's total xG is 3.57, her npxG 2.01. The difference comes from two penalties. Both went off target: one against Switzerland (group game), the other against Italy (quarter-final). Both of Hegerberg's goals came from open play or set pieces. Alexia Putellas has 2.52 xG and 1.74 npxG: her only penalty, in the quarter-final against Switzerland, was saved.</p>
+    <h2 id="euro-2025"><small>03</small>Euro 2025: who beat expectations and who fell short</h2>
+    <p>The highest npxG at the tournament belongs to Esther Gonzalez: 4.02 npxG from 24 shots and 4 goals. Expectation and outcome are almost identical, and her 4 goals also made her the tournament's top scorer. Stina Blackstenius turned 2.98 npxG into 3 goals.</p>
+  </div>
+  <figure class="g" id="g-euro-2025-gol-xg">
+    <a class="buyut" href="euro-2025-gol-xg.png" target="_blank" rel="noopener" aria-label="Open full-size image">
+    <picture>
+      <source type="image/webp" srcset="euro-2025-gol-xg.webp">
+      <img src="euro-2025-gol-xg.png" width="1280" height="1464" loading="lazy" decoding="async" alt="The 12 players with the highest npxG at Euro 2025: Esther Gonzalez (Spain): npxG 4.02, non-penalty goals 4; Stina Blackstenius (Sweden): npxG 2.98, non-penalty goals 3; Alessia Russo (England): npxG 2.41, non-penalty goals 2; Ella Toone (England): npxG 2.32, non-penalty goals 2; Cristiana Girelli (Italy): npxG 2.24, non-penalty goals 3; Marie-Antoinette Katoto (France): npxG 2.13, non-penalty goals 2; Ada Hegerberg (Norway): npxG 2.01, non-penalty goals 2; Alexia Putellas (Spain): npxG 1.74, non-penalty goals 3; Lea Schüller (Germany): npxG 1.70, non-penalty goals 2; Lauren Hemp (England): npxG 1.55, non-penalty goals 1; Klara Bühl (Germany): npxG 1.39, non-penalty goals 0; Lauren James (England): npxG 1.36, non-penalty goals 2.">
+    </picture></a>
+    <figcaption>The ring shows expected goals (npxG), the dot actual non-penalty goals. The longer the line, the bigger the gap between expectation and outcome.</figcaption>
+  </figure>
+  <div class="yazi">
+    <p>Cristiana Girelli scored 3 non-penalty goals from 2.24 npxG, Alexia Putellas 3 from 1.74. At the other end is Klara Bühl: 24 shots and 1.39 npxG, but no goals.</p>
+    <p>Outside the chart there are even more striking cases. Signe Gaupset scored 2 goals from 8 shots worth 0.39 npxG in total, Victoria Pelova 2 from 5 shots worth 0.41. With so few shots, a gap of one or two goals may say more about luck (variance, in statistical terms) than about finishing.</p>
+    <div class="ders"><b>REMEMBER</b><p>At a tournament a player gets six or seven games at most. Before reading the gap between goals and xG as "finishing skill", look at the number of shots.</p></div>
+    <h2 id="dunya-kupasi-2023"><small>04</small>2023 World Cup: 5 goals, 1.87 npxG</h2>
+    <p>Hinata Miyazawa finished the tournament as top scorer with 5 goals, yet her 13 shots were worth 1.87 npxG in total: 3.13 goals above expectation. Alba Redondo, who reached the highest npxG of the tournament, turned 4.58 npxG into 3 goals.</p>
+  </div>
+  <figure class="g" id="g-dunya-kupasi-2023-gol-xg">
+    <a class="buyut" href="dunya-kupasi-2023-gol-xg.png" target="_blank" rel="noopener" aria-label="Open full-size image">
+    <picture>
+      <source type="image/webp" srcset="dunya-kupasi-2023-gol-xg.webp">
+      <img src="dunya-kupasi-2023-gol-xg.png" width="1280" height="1464" loading="lazy" decoding="async" alt="The 12 players with the highest npxG at the 2023 World Cup: Alba Redondo (Spain): npxG 4.58, non-penalty goals 3; Jill Roord (Netherlands): npxG 3.16, non-penalty goals 4; Kadidiatou Diani (France): npxG 2.65, non-penalty goals 2; Mary Boio Fowler (Australia): npxG 2.54, non-penalty goals 1; Jennifer Hermoso (Spain): npxG 2.43, non-penalty goals 3; Thembi Kgatlana (South Africa): npxG 2.38, non-penalty goals 2; Lauren Hemp (England): npxG 2.31, non-penalty goals 3; Stina Blackstenius (Sweden): npxG 2.09, non-penalty goals 1; Alessia Russo (England): npxG 1.98, non-penalty goals 3; Alexandra Popp (Germany): npxG 1.93, non-penalty goals 3; Alex Morgan (USA): npxG 1.87, non-penalty goals 0; Hinata Miyazawa (Japan): npxG 1.87, non-penalty goals 5.">
+    </picture></a>
+    <figcaption>Same reading: ring is expected, dot is actual. Ties in npxG are ordered by name.</figcaption>
+  </figure>
+  <div class="yazi">
+    <p>Alex Morgan reached 1.87 npxG from 17 shots without scoring; Mary Boio Fowler got 1 goal from 2.54 npxG. Just outside the chart is a centre-back: Amanda Ilestedt scored 4 goals from 9 shots worth 1.84 npxG.</p>
+    <h3>The finals: an xG edge does not guarantee the trophy</h3>
+    <p>Both tournaments ended with Spain against England. In the 2023 final Spain produced 2.19 xG and England 0.47, and the game finished 1-0; Spain's total includes Jennifer Hermoso's missed penalty (0.78 xG). In the Euro 2025 final Spain produced 2.14 xG and England 0.88; it finished 1-1 and England won the shoot-out 3-1.</p>
+    <h2 id="xa"><small>05</small>xA: the expected value of an assist</h2>
+    <p>An assist depends on two players: the passer creates the chance, the shooter finishes it. Expected assists (xA) separates the two by crediting the passer with the xG of the shot that follows the pass. Even if the team-mate misses, the passer gets credit for the chance created. In this article xA is the total xG of shots that came directly from a player's passes (key passes).</p>
+  </div>
+  <figure class="g" id="g-euro-2025-xa">
+    <a class="buyut" href="euro-2025-xa.png" target="_blank" rel="noopener" aria-label="Open full-size image">
+    <picture>
+      <source type="image/webp" srcset="euro-2025-xa.webp">
+      <img src="euro-2025-xa.png" width="1280" height="1304" loading="lazy" decoding="async" alt="The 10 players with the highest xA at Euro 2025: Johanna Rytting-Kaneryd (Sweden): xA 2.32, assists 2; Alexia Putellas (Spain): xA 1.81, assists 4; Mariona Caldentey (Spain): xA 1.56, assists 2; Claudia Pina (Spain): xA 1.55, assists 2; Klara Bühl (Germany): xA 1.54, assists 1; Kosovare Asllani (Sweden): xA 1.37, assists 3; Lauren Hemp (England): xA 1.34, assists 0; Ona Batlle (Spain): xA 1.33, assists 1; Aitana Bonmati (Spain): xA 1.30, assists 1; Alessia Russo (England): xA 1.21, assists 3.">
+    </picture></a>
+    <figcaption>The ring shows the expected value created by passes (xA), the dot the actual assists. An assist depends on a team-mate finishing; xA does not.</figcaption>
+  </figure>
+  <div class="yazi">
+    <p>The highest xA at Euro 2025 belongs to Johanna Rytting-Kaneryd: 2.32 xA and 2 assists in 395 minutes. Alexia Putellas turned 1.81 xA into 4 assists; nobody at the tournament made more. Lauren Hemp's passes created chances worth 1.34 xA, but none became an assist: by xA the chances were there, they were just not finished.</p>
+    <h2 id="ilerletici"><small>06</small>Progressive actions: moving the ball towards goal</h2>
+    <p>Goal and shot metrics look at the last moment of an attack. To see how the ball got there, we use progressive passes and carries. In this article the definition is: in open play, a completed pass or carry that starts outside the 40% of the pitch nearest a team's own goal and moves the ball at least 10 yards closer to the centre of the opponent's goal, plus any pass or carry from outside the penalty area into it.</p>
+  </div>
+  <figure class="g" id="g-euro-2025-ilerletici">
+    <a class="buyut" href="euro-2025-ilerletici.png" target="_blank" rel="noopener" aria-label="Open full-size image">
+    <picture>
+      <source type="image/webp" srcset="euro-2025-ilerletici.webp">
+      <img src="euro-2025-ilerletici.png" width="1280" height="1304" loading="lazy" decoding="async" alt="The 10 players with the most progressive actions per 90 at Euro 2025 (minimum 270 minutes): Mariona Caldentey (Spain): passes 11.2, carries 4.6, total 15.8; Laia Aleixandri (Spain): passes 12.1, carries 2.2, total 14.2; Klara Bühl (Germany): passes 2.7, carries 10.8, total 13.6; María Méndez (Spain): passes 12.3, carries 0.6, total 12.8; Johanna Rytting-Kaneryd (Sweden): passes 4.8, carries 7.5, total 12.3; Selma Bacha (France): passes 7.0, carries 4.9, total 11.9; Claudia Pina (Spain): passes 5.7, carries 5.7, total 11.4; Patri Guijarro (Spain): passes 10.0, carries 1.3, total 11.3; Ona Batlle (Spain): passes 7.8, carries 2.6, total 10.4; Carlotta Wamser (Germany): passes 8.2, carries 2.1, total 10.3.">
+    </picture></a>
+    <figcaption>Purple is progressive passes, orange progressive carries. The definition is in this article's methodology note; it is not StatsBomb's official definition.</figcaption>
+  </figure>
+  <div class="yazi">
+    <p>Mariona Caldentey leads clearly with 15.8 progressive actions per 90. There are 2 centre-backs in the top 10 (Laia Aleixandri, María Méndez): defenders who bring the ball out from the back stand out here and never appear in the goals-and-assists table. Of Klara Bühl's 84 progressive actions, 67 were carries: the same metric shows two very different player types.</p>
+    <div class="ders"><b>REMEMBER</b><p>This is a simple definition and not identical to StatsBomb's or other providers' official ones. Check the definitions before putting progressive pass numbers from different sources side by side.</p></div>
+    <h2 id="sinirlar"><small>07</small>Limits of the data</h2>
+    <ul><li><strong>Not current.</strong> The newest women's league seasons in StatsBomb's open data are 2023/24 (last game 16 June 2024); the newest tournament is Euro 2025 (last game 27 July 2025). There is no public event data for 2026-27, so this article explains concepts, not current form.</li><li><strong>Small samples.</strong> A player gets between three and seven games at a tournament; differences of a few shots can come down to luck.</li><li><strong>xG only measures shots.</strong> Dangerous moments that never produce a shot (an attack whose final pass is cut out) do not count at all.</li><li><strong>The model is an estimate.</strong> Different providers' xG values can differ; only StatsBomb's model is used here.</li><li><strong>Not included.</strong> Own goals and penalty shoot-outs are left out of all figures.</li></ul>
+    <h2 id="yontem"><small>08</small>Methodology note</h2>
+    <ul><li><strong>Source:</strong> Hudl StatsBomb open data (github.com/statsbomb/open-data); event and line-up files of Euro 2025 (31 games, 2 July–27 July 2025) and the 2023 World Cup (64 games, 20 July–20 August 2023).</li><li><strong>Summary:</strong> per player and tournament (13 November 2026). Minutes come from the entry and exit times in the line-up files; extra time included, shoot-outs excluded.</li><li><strong>xG and npxG:</strong> StatsBomb's per-shot xG value; npxG removes penalties. "Non-penalty goals" are total goals minus penalty goals.</li><li><strong>xA:</strong> the total xG of shots that directly followed a player's passes.</li><li><strong>Progressive actions:</strong> definition above; per-90 values only for players with at least 270 minutes.</li><li><strong>Zone map:</strong> the 2,470 non-penalty shots from both tournaments, split into six zones using StatsBomb coordinates (120×80 yards). Total goals (own goals excluded): Euro 2025 103, World Cup 2023 156.</li><li><strong>Names:</strong> player names as spelled in the source data.</li><li>A free, public list of the same summary by player and competition: <a href="https://womenfootballscouting.com/?sb=liste&dil=EN&ref=blog">Event Data Archive</a>.</li></ul>
+  </div>
+
+  <div class="sb-not">
+    <span class="sb-chip"><img src="/xg-euro-2025/statsbomb-logo.png" alt="StatsBomb" width="640" height="103"></span>
+    <p>Data: <strong>Hudl StatsBomb</strong> open data (<a href="https://github.com/statsbomb/open-data" rel="noopener">github.com/statsbomb/open-data</a>). This analysis is published for non-commercial, educational purposes with attribution and the StatsBomb logo. No raw data is included in or distributed from this page.</p>
+  </div>
+
+  <div class="paylas">
+    <span class="y">SHARE</span>
+    <a id="p-wa" href="https://wa.me/?text=What%20Is%20xG%3F%20Expected%20Goals%20Explained%20with%20Euro%202025%20and%202023%20World%20Cup%20Data%20https%3A%2F%2Fblog.womenfootballscouting.com%2Fen%2Fxg-euro-2025%2F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+    <a id="p-x" href="https://twitter.com/intent/tweet?text=What%20Is%20xG%3F%20Expected%20Goals%20Explained%20with%20Euro%202025%20and%202023%20World%20Cup%20Data&amp;url=https%3A%2F%2Fblog.womenfootballscouting.com%2Fen%2Fxg-euro-2025%2F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.3l-4.9-6.4L5.2 21H2.1l7.3-8.3L2 3h6.4l4.4 5.9L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>X</a>
+    <button type="button" id="p-kopya"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a3 3 0 1 1 4.2 4.2l-2 2a1 1 0 1 1-1.4-1.4l2-2a1 1 0 1 0-1.4-1.4l-3.5 3.5a1 1 0 0 1-1.4 0zm2.8-2.8a1 1 0 0 1 0 1.4l-3.5 3.5a3 3 0 1 1-4.2-4.2l2-2a1 1 0 0 1 1.4 1.4l-2 2a1 1 0 1 0 1.4 1.4l3.5-3.5a1 1 0 0 1 1.4 0z"/></svg><span>Copy link</span></button>
+  </div>
+
+  <p class="kaynak">Data: summary of 13 November 2026 · last game 27 July 2025. Source: Hudl StatsBomb open data — Euro 2025 (2 July–27 July 2025) and the 2023 World Cup (20 July–20 August 2023).</p>
+
+<!-- DIGER -->
+  <section class="dg" aria-label="More files">
+    <style>.dg{max-width:760px;margin:44px auto 0}.dg h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:28px;color:#fff;margin:0 0 12px}.dg a.dgk{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center;text-decoration:none;border:1px solid #262d57;border-radius:12px;background:#141933;padding:10px;margin:0 0 10px}.dg a.dgk:hover{border-color:#a855f7}.dg a.dgk img{width:150px;height:auto;border-radius:8px;border:0}.dg a.dgk b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:21px;line-height:1.1;color:#fff}.dg a.dgk span{display:block;font-size:12.5px;letter-spacing:.1em;font-weight:700;color:#c4b5fd;margin-bottom:3px}.dg a.dgt{font-weight:600;font-size:14.5px}@media (max-width:520px){.dg a.dgk{grid-template-columns:104px minmax(0,1fr)}.dg a.dgk img{width:104px}}</style>
+    <h2>More files</h2>
+    <a class="dgk" href="/en/fomget-besiktas/"><img src="/en/fomget-besiktas/kapak.png" width="1200" height="630" loading="lazy" alt=""><div><span>TITLE-RACE FILE · 13 NOVEMBER 2026</span><b>Three Views Before the Top-of-the-Table Clash: ABB FOMGET vs Beşiktaş</b></div></a><a class="dgk" href="/en/fenerbahce-galatasaray-derbi/"><img src="/en/fenerbahce-galatasaray-derbi/kapak.png" width="1200" height="630" loading="lazy" alt=""><div><span>DERBY FILE · 6 NOVEMBER 2026</span><b>Three Views Before the Derby: Fenerbahçe vs Galatasaray</b></div></a>
+    <a class="dgt" href="/en/">All articles →</a>
+  </section>
+<!-- /DIGER -->
+
+  <div class="cta">
+    <div><b>This week's files</b><span>Match files and data guides on the blog.</span></div>
+    <a href="/en/">All articles →</a>
+  </div>
+</article>
+</main>
+
+<footer>
+  <span>© 2026 Women's Football Scouting · Data: Hudl StatsBomb</span>
+  <span><a href="/en/">All articles</a> · <a href="https://womenfootballscouting.com/?dil=EN&ref=blog">Main site</a></span>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('p-kopya'); if(!b) return;
+  var url='https://blog.womenfootballscouting.com/en/xg-euro-2025/';
+  var mobil=!!navigator.share && /Android|iPhone|iPad/i.test(navigator.userAgent);
+  if(mobil){ b.querySelector('span').textContent='Share'; }
+  b.addEventListener('click',function(){
+    var s=b.querySelector('span');
+    function tamam(){ s.textContent='Copied'; setTimeout(function(){ s.textContent='Copy link'; },1800); }
+    if(mobil){ navigator.share({title:document.title,url:url}).catch(function(){}); return; }
+    if(navigator.clipboard){ navigator.clipboard.writeText(url).then(tamam,function(){ prompt('Link:',url); }); }
+    else { prompt('Link:',url); }
+  });
+})();
+</script>
+</body>
+</html>

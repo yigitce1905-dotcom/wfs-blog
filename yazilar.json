@@ -1,7 +1,37 @@
 {
- "guncelleme": "2026-11-13",
+ "guncelleme": "2026-11-14",
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
+  {
+   "slug": "xg-euro-2025",
+   "tarih": "2026-11-14",
+   "okuma": 8,
+   "en": true,
+   "renk": [
+    "#a855f7",
+    "#c4b5fd"
+   ],
+   "kick": {
+    "tr": "VERİ REHBERİ",
+    "en": "DATA GUIDE"
+   },
+   "baslik": {
+    "tr": "xG Nedir? Euro 2025 ve 2023 Dünya Kupası Verisiyle Beklenen Gol",
+    "en": "What Is xG? Expected Goals Explained with Euro 2025 and 2023 World Cup Data"
+   },
+   "ozet": {
+    "tr": "xG, npxG, xA ve ilerletici aksiyonlar ne anlatır? Euro 2025 ve 2023 Dünya Kupası'nın StatsBomb açık verisiyle örnekli rehber.",
+    "en": "What do xG, npxG, xA and progressive actions tell you? A guide with real examples from StatsBomb open data on Euro 2025 and the 2023 World Cup."
+   },
+   "kart": {
+    "tr": "Beklenen gol nedir, kim beklentinin üstünde kaldı: grafiklerle xG rehberi",
+    "en": "What expected goals are and who beat them: an xG guide with charts"
+   },
+   "ek": {
+    "tr": "grafiklerle, StatsBomb açık verisiyle",
+    "en": "with charts, using StatsBomb open data"
+   }
+  },
   {
    "slug": "fomget-besiktas",
    "tarih": "2026-11-13",
