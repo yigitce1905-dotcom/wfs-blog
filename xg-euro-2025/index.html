@@ -202,6 +202,8 @@ footer a{color:var(--soluk)}
 .ders p{margin:0!important;font-size:15.5px;line-height:1.6;color:#dbe2ee}
 figure.g{max-width:760px}
 figure.g img{border-radius:12px}
+@media (max-width:600px),(hover:none){a.buyut[data-ipucu]::after{content:attr(data-ipucu);display:block;margin:7px 2px 0;
+  font:600 12.5px/1.3 Inter,sans-serif;color:var(--mor2);text-align:right}}
 .sb-not{display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:760px;margin:34px auto 0;padding:16px 18px;border:1px solid var(--cizgi);
   border-radius:12px;background:var(--yuzey)}
 .sb-not p{margin:0;font-size:14px;line-height:1.6;color:#cbd5e1;flex:1 1 300px;min-width:0}
@@ -258,8 +260,10 @@ figure.g img{border-radius:12px}
     <p>StatsBomb'un modeli şutun yerine ve açısına, vücudun hangi bölümüyle vurulduğuna, şutu hazırlayan pasın türüne ve şut anında kalecinin ve savunmacıların nerede durduğu gibi bilgilere bakar. Bir oyuncunun ya da takımın xG'si, attığı şutların değerlerinin toplamıdır.</p>
   </div>
   <figure class="g" id="g-xg-haritasi">
-    <a class="buyut" href="xg-haritasi.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç">
+    <a class="buyut" href="xg-haritasi.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç" data-ipucu="⤢ Tam boy için dokunun">
     <picture>
+      <source media="(max-width:600px)" type="image/webp" srcset="xg-haritasi-m.webp" width="720" height="1084">
+      <source media="(max-width:600px)" type="image/png" srcset="xg-haritasi-m.png" width="720" height="1084">
       <source type="image/webp" srcset="xg-haritasi.webp">
       <img src="xg-haritasi.png" width="1280" height="1284" loading="lazy" decoding="async" alt="Yarım saha üzerinde altı şut bölgesi, kale yukarıda. Altı pas içi: ortalama 0,25 xG, şutların %25 kadarı gol. Penaltı noktası çevresi: 0,14 xG, %13 gol. Ceza sahasının ön bandı: 0,09 xG, %11 gol. Ceza sahasının yanları: 0,05 xG, %6 gol. Ceza sahası önü: 0,04 xG, %3 gol. Daha uzak ve dar açılar: 0,01 xG, %2 gol.">
     </picture></a>
@@ -276,8 +280,10 @@ figure.g img{border-radius:12px}
     <p>Turnuvanın en yüksek npxG'si Esther Gonzalez'e ait: 24 şutta 4,02 npxG ve 4 gol. Beklentiyle sonuç neredeyse aynı; 4 golle turnuvanın en golcü oyuncusu da o. Stina Blackstenius 2,98 npxG'den 3 gol çıkardı.</p>
   </div>
   <figure class="g" id="g-euro-2025-gol-xg">
-    <a class="buyut" href="euro-2025-gol-xg.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç">
+    <a class="buyut" href="euro-2025-gol-xg.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç" data-ipucu="⤢ Tam boy için dokunun">
     <picture>
+      <source media="(max-width:600px)" type="image/webp" srcset="euro-2025-gol-xg-m.webp" width="720" height="1998">
+      <source media="(max-width:600px)" type="image/png" srcset="euro-2025-gol-xg-m.png" width="720" height="1998">
       <source type="image/webp" srcset="euro-2025-gol-xg.webp">
       <img src="euro-2025-gol-xg.png" width="1280" height="1464" loading="lazy" decoding="async" alt="Euro 2025&#x27;te en yüksek npxG&#x27;ye ulaşan 12 oyuncu: Esther Gonzalez (İspanya): npxG 4,02, penaltısız gol 4; Stina Blackstenius (İsveç): npxG 2,98, penaltısız gol 3; Alessia Russo (İngiltere): npxG 2,41, penaltısız gol 2; Ella Toone (İngiltere): npxG 2,32, penaltısız gol 2; Cristiana Girelli (İtalya): npxG 2,24, penaltısız gol 3; Marie-Antoinette Katoto (Fransa): npxG 2,13, penaltısız gol 2; Ada Hegerberg (Norveç): npxG 2,01, penaltısız gol 2; Alexia Putellas (İspanya): npxG 1,74, penaltısız gol 3; Lea Schüller (Almanya): npxG 1,70, penaltısız gol 2; Lauren Hemp (İngiltere): npxG 1,55, penaltısız gol 1; Klara Bühl (Almanya): npxG 1,39, penaltısız gol 0; Lauren James (İngiltere): npxG 1,36, penaltısız gol 2.">
     </picture></a>
@@ -291,8 +297,10 @@ figure.g img{border-radius:12px}
     <p>Turnuvayı 5 golle en golcü oyuncu olarak bitiren Hinata Miyazawa'nın 13 şutunun toplam değeri 1,87 npxG idi: beklentinin 3,13 gol üstü. Turnuvanın en yüksek npxG'sine ulaşan Alba Redondo ise 4,58 npxG'den 3 gol çıkardı.</p>
   </div>
   <figure class="g" id="g-dunya-kupasi-2023-gol-xg">
-    <a class="buyut" href="dunya-kupasi-2023-gol-xg.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç">
+    <a class="buyut" href="dunya-kupasi-2023-gol-xg.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç" data-ipucu="⤢ Tam boy için dokunun">
     <picture>
+      <source media="(max-width:600px)" type="image/webp" srcset="dunya-kupasi-2023-gol-xg-m.webp" width="720" height="1998">
+      <source media="(max-width:600px)" type="image/png" srcset="dunya-kupasi-2023-gol-xg-m.png" width="720" height="1998">
       <source type="image/webp" srcset="dunya-kupasi-2023-gol-xg.webp">
       <img src="dunya-kupasi-2023-gol-xg.png" width="1280" height="1464" loading="lazy" decoding="async" alt="2023 Dünya Kupası&#x27;nda en yüksek npxG&#x27;ye ulaşan 12 oyuncu: Alba Redondo (İspanya): npxG 4,58, penaltısız gol 3; Jill Roord (Hollanda): npxG 3,16, penaltısız gol 4; Kadidiatou Diani (Fransa): npxG 2,65, penaltısız gol 2; Mary Boio Fowler (Avustralya): npxG 2,54, penaltısız gol 1; Jennifer Hermoso (İspanya): npxG 2,43, penaltısız gol 3; Thembi Kgatlana (Güney Afrika): npxG 2,38, penaltısız gol 2; Lauren Hemp (İngiltere): npxG 2,31, penaltısız gol 3; Stina Blackstenius (İsveç): npxG 2,09, penaltısız gol 1; Alessia Russo (İngiltere): npxG 1,98, penaltısız gol 3; Alexandra Popp (Almanya): npxG 1,93, penaltısız gol 3; Alex Morgan (ABD): npxG 1,87, penaltısız gol 0; Hinata Miyazawa (Japonya): npxG 1,87, penaltısız gol 5.">
     </picture></a>
@@ -306,8 +314,10 @@ figure.g img{border-radius:12px}
     <p>Asist iki oyuncuya bağlıdır: pası veren fırsatı yaratır, şutu atan bitirir. Beklenen asist (xA) bu ikisini ayırır: bir pasın ardından gelen şutun xG değeri pası verene yazılır. Takım arkadaşı şutu kaçırsa da pası veren, yarattığı fırsatın karşılığını alır. Bu yazıdaki xA, şutla biten paslardan (kilit pas) sonraki şutların xG toplamıdır.</p>
   </div>
   <figure class="g" id="g-euro-2025-xa">
-    <a class="buyut" href="euro-2025-xa.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç">
+    <a class="buyut" href="euro-2025-xa.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç" data-ipucu="⤢ Tam boy için dokunun">
     <picture>
+      <source media="(max-width:600px)" type="image/webp" srcset="euro-2025-xa-m.webp" width="720" height="1750">
+      <source media="(max-width:600px)" type="image/png" srcset="euro-2025-xa-m.png" width="720" height="1750">
       <source type="image/webp" srcset="euro-2025-xa.webp">
       <img src="euro-2025-xa.png" width="1280" height="1304" loading="lazy" decoding="async" alt="Euro 2025&#x27;te en yüksek xA&#x27;ya ulaşan 10 oyuncu: Johanna Rytting-Kaneryd (İsveç): xA 2,32, asist 2; Alexia Putellas (İspanya): xA 1,81, asist 4; Mariona Caldentey (İspanya): xA 1,56, asist 2; Claudia Pina (İspanya): xA 1,55, asist 2; Klara Bühl (Almanya): xA 1,54, asist 1; Kosovare Asllani (İsveç): xA 1,37, asist 3; Lauren Hemp (İngiltere): xA 1,34, asist 0; Ona Batlle (İspanya): xA 1,33, asist 1; Aitana Bonmati (İspanya): xA 1,30, asist 1; Alessia Russo (İngiltere): xA 1,21, asist 3.">
     </picture></a>
@@ -319,8 +329,10 @@ figure.g img{border-radius:12px}
     <p>Gol ve şut ölçüleri hücumun son anına bakar. Topun o bölgeye nasıl geldiğini görmek için ilerletici pas ve top taşıma (sürme) kullanılır. Bu yazıda tanım şöyle: açık oyunda, sahanın kendi kalesine yakın %40'lık bölümünün dışından başlayıp topu rakip kalenin merkezine en az 10 yarda yaklaştıran tamamlanmış pas ya da top taşıma; ayrıca ceza sahası dışından ceza sahasına giren pas ya da top taşıma.</p>
   </div>
   <figure class="g" id="g-euro-2025-ilerletici">
-    <a class="buyut" href="euro-2025-ilerletici.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç">
+    <a class="buyut" href="euro-2025-ilerletici.png" target="_blank" rel="noopener" aria-label="Görseli tam boy aç" data-ipucu="⤢ Tam boy için dokunun">
     <picture>
+      <source media="(max-width:600px)" type="image/webp" srcset="euro-2025-ilerletici-m.webp" width="720" height="1848">
+      <source media="(max-width:600px)" type="image/png" srcset="euro-2025-ilerletici-m.png" width="720" height="1848">
       <source type="image/webp" srcset="euro-2025-ilerletici.webp">
       <img src="euro-2025-ilerletici.png" width="1280" height="1304" loading="lazy" decoding="async" alt="Euro 2025&#x27;te en az 270 dakika oynayanlar arasında 90 dakikada en çok ilerletici aksiyon yapan 10 oyuncu: Mariona Caldentey (İspanya): pas 11,2, top taşıma 4,6, toplam 15,8; Laia Aleixandri (İspanya): pas 12,1, top taşıma 2,2, toplam 14,2; Klara Bühl (Almanya): pas 2,7, top taşıma 10,8, toplam 13,6; María Méndez (İspanya): pas 12,3, top taşıma 0,6, toplam 12,8; Johanna Rytting-Kaneryd (İsveç): pas 4,8, top taşıma 7,5, toplam 12,3; Selma Bacha (Fransa): pas 7,0, top taşıma 4,9, toplam 11,9; Claudia Pina (İspanya): pas 5,7, top taşıma 5,7, toplam 11,4; Patri Guijarro (İspanya): pas 10,0, top taşıma 1,3, toplam 11,3; Ona Batlle (İspanya): pas 7,8, top taşıma 2,6, toplam 10,4; Carlotta Wamser (Almanya): pas 8,2, top taşıma 2,1, toplam 10,3.">
     </picture></a>
