@@ -1,7 +1,37 @@
 {
- "guncelleme": "2026-11-14",
+ "guncelleme": "2026-11-23",
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
+  {
+   "slug": "kamerun-kadin-milli-takimi",
+   "tarih": "2026-11-23",
+   "okuma": 12,
+   "en": false,
+   "renk": [
+    "#3ddc97",
+    "#fcd116"
+   ],
+   "kick": {
+    "tr": "RAKİP DOSYASI",
+    "en": "OPPONENT FILE"
+   },
+   "baslik": {
+    "tr": "Kamerun Kadın A Millî Futbol Takımı",
+    "en": "Cameroon Women's National Team"
+   },
+   "ozet": {
+    "tr": "Türkiye'nin 1 ve 4 Aralık'taki hazırlık rakibi Kamerun: WAFCON şampiyonluğuna giden yol, Nguele'nin oyun planı ve Türkiye bağlantılı oyuncular.",
+    "en": "Türkiye's friendly opponent on 1 and 4 December: Cameroon's road to the WAFCON title, Nguele's game plan and the players with Turkish ties."
+   },
+   "kart": {
+    "tr": "Afrika şampiyonu Antalya'da: künye, oyun planı, Türkiye bağlantılı oyuncular",
+    "en": "The African champions in Antalya: profile, game plan, players with Turkish ties"
+   },
+   "ek": {
+    "tr": "diziliş şablonları ve sitenin verisiyle",
+    "en": "with formation diagrams and the site's data"
+   }
+  },
   {
    "slug": "xg-euro-2025",
    "tarih": "2026-11-14",
