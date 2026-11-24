@@ -1,7 +1,37 @@
 {
- "guncelleme": "2026-11-23",
+ "guncelleme": "2026-11-24",
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
+  {
+   "slug": "ocak-2027-bonservissiz-oyuncu-piyasasi",
+   "tarih": "2026-11-24",
+   "okuma": 6,
+   "en": true,
+   "renk": [
+    "#3ddc97",
+    "#a855f7"
+   ],
+   "kick": {
+    "tr": "TRANSFER DÖNEMİ",
+    "en": "TRANSFER WINDOW"
+   },
+   "baslik": {
+    "tr": "Ocak 2027: Bonservissiz Oyuncu Piyasası Rakamlarla",
+    "en": "January 2027: The Free-Transfer Market in Numbers"
+   },
+   "ozet": {
+    "tr": "24 Kasım 2026 itibarıyla Sözleşme Takibi 2027 listesinde 991 notlu oyuncu var: 46 serbest, 118 sıradaki dönemde, 827 sezon sonunda bonservissiz. Mevki, lig, yaş ve not dağılımı; kış dönemlerinin takvimi.",
+    "en": "As of 24 November 2026, the Contract Watch 2027 list holds 991 graded players: 46 free agents, 118 free in the next window and 827 free at season end. Breakdowns by position, league, age and grade, plus the winter window calendar."
+   },
+   "kart": {
+    "tr": "46 serbest, 118 Ocak'ta, 827 sezon sonunda bonservissiz: piyasanın mevki, lig, yaş ve not dağılımı",
+    "en": "46 free agents, 118 free in January, 827 at season end: the market by position, league, age and grade"
+   },
+   "ek": {
+    "tr": "sütun grafikleri ve kış dönemi takvimiyle",
+    "en": "with column charts and the winter window calendar"
+   }
+  },
   {
    "slug": "kamerun-kadin-milli-takimi",
    "tarih": "2026-11-23",
