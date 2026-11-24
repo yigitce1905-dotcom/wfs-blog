@@ -3,6 +3,36 @@
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
   {
+   "slug": "super-lig-ilk-11-hafta-rakamlarla",
+   "tarih": "2026-11-24",
+   "okuma": 8,
+   "en": true,
+   "renk": [
+    "#fb7185",
+    "#fbbf24"
+   ],
+   "kick": {
+    "tr": "LİG DOSYASI",
+    "en": "LEAGUE FILE"
+   },
+   "baslik": {
+    "tr": "Süper Lig'in İlk 11 Haftası Rakamlarla",
+    "en": "The Turkish Women's Super League After 11 Weeks, in Numbers"
+   },
+   "ozet": {
+    "tr": "Kadın Futbol Süper Ligi 2026-27'nin ilk 11 haftası rakamlarla: puan tablosu, haftalık gol ortalaması, ev sahibi ve deplasman dengesi, gol ve asist sıralaması, 21 yaş ve altının aldığı dakikalar.",
+    "en": "The first 11 weeks of the 2026-27 Turkish Women's Super League in numbers: the table, goals per match by week, home and away, the scoring and assist charts, and the minutes given to players aged 21 or under."
+   },
+   "kart": {
+    "tr": "87 sonuç, 373 gol: tablo, haftalık gol ortalaması, gol krallığı ve genç oyuncuların dakika payı",
+    "en": "87 results, 373 goals: the table, goals by week, top scorers and the share of minutes for young players"
+   },
+   "ek": {
+    "tr": "tablolar ve sütun grafikleriyle",
+    "en": "with tables and column charts"
+   }
+  },
+  {
    "slug": "kuzey-ligleri-2026-rakamlarla",
    "tarih": "2026-11-24",
    "okuma": 9,
