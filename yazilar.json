@@ -3,6 +3,36 @@
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
   {
+   "slug": "kuzey-amerika-2026-rakamlarla",
+   "tarih": "2026-11-28",
+   "okuma": 6,
+   "en": true,
+   "renk": [
+    "#60a5fa",
+    "#f87171"
+   ],
+   "kick": {
+    "tr": "SEZON DOSYASI",
+    "en": "SEASON FILE"
+   },
+   "baslik": {
+    "tr": "Kuzey Amerika 2026 Rakamlarla: NWSL, Northern Super League ve USL Super League",
+    "en": "North America 2026 in Numbers: NWSL, Northern Super League and USL Super League"
+   },
+   "ozet": {
+    "tr": "NWSL 2026, Northern Super League 2026 ve USL Super League 2026-27 rakamlarla: normal sezon tabloları, gol ve asist listeleri, her dakika oynayanlar, en genç düzenli oyuncular, 21 yaş ve altının dakika payı, ev sahibi avantajı.",
+    "en": "NWSL 2026, Northern Super League 2026 and USL Super League 2026-27 in numbers: regular-season tables, scoring and assist lists, ever-present players, the youngest regulars, the share of minutes for players aged 21 or under, and home advantage."
+   },
+   "kart": {
+    "tr": "Üç lig, 366 maç, 1.039 gol: tablolar, golcüler, her dakika oynayanlar ve gençlere süre verenler",
+    "en": "Three leagues, 366 matches, 1,039 goals: tables, scorers, ever-presents and the clubs giving youth a chance"
+   },
+   "ek": {
+    "tr": "puan tabloları ve oyuncu listeleriyle",
+    "en": "with tables and player lists"
+   }
+  },
+  {
    "slug": "avrupa-buyuk-ligler-21-yas-alti-2026-27",
    "tarih": "2026-11-28",
    "okuma": 6,
