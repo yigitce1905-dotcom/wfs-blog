@@ -1,7 +1,37 @@
 {
- "guncelleme": "2026-11-26",
+ "guncelleme": "2026-11-28",
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
+  {
+   "slug": "avrupa-buyuk-ligler-21-yas-alti-2026-27",
+   "tarih": "2026-11-28",
+   "okuma": 6,
+   "en": true,
+   "renk": [
+    "#c4b5fd",
+    "#fbbf24"
+   ],
+   "kick": {
+    "tr": "GENÇ OYUNCU DOSYASI",
+    "en": "YOUNG PLAYERS FILE"
+   },
+   "baslik": {
+    "tr": "Avrupa'nın Beş Büyük Liginde 21 Yaş Altı: Kim Gerçekten Süre Alıyor?",
+    "en": "Under-21s in Europe's Big Five Leagues: Who Is Actually Getting Minutes?"
+   },
+   "ozet": {
+    "tr": "WSL, Frauen-Bundesliga, Liga F, Première Ligue ve Serie A 2026-27: 21 yaş ve altındaki oyuncuların dakika payı, gençlere en çok ve en az süre veren kulüpler, her dakika oynayan gençler, gol ve asist üretenler, 19 yaş ve altının en çok oynayanları.",
+    "en": "WSL, Frauen-Bundesliga, Liga F, Première Ligue and Serie A 2026-27: the share of minutes for players aged 21 or under, the clubs giving young players the most and the least time, the under-21s who play every minute, the top producers of goals and assists, and the most-used players aged 19 or under."
+   },
+   "kart": {
+    "tr": "İngiltere yüzde 9,3, İspanya yüzde 23,5: beş büyük ligde gençlerin dakika payı, kulüpler ve isimler",
+    "en": "England 9.3%, Spain 23.5%: the share of minutes for young players across the big five leagues, clubs and names"
+   },
+   "ek": {
+    "tr": "sütun grafikleri ve oyuncu listeleriyle",
+    "en": "with column charts and player lists"
+   }
+  },
   {
    "slug": "super-lig-ilk-11-hafta-rakamlarla",
    "tarih": "2026-11-24",
