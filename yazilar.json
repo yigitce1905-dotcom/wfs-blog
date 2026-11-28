@@ -3,6 +3,36 @@
  "alan": "https://blog.womenfootballscouting.com",
  "yazilar": [
   {
+   "slug": "kis-transfer-donemi-2027-ulke-ulke",
+   "tarih": "2026-11-28",
+   "okuma": 4,
+   "en": true,
+   "renk": [
+    "#3ddc97",
+    "#fbbf24"
+   ],
+   "kick": {
+    "tr": "TRANSFER DÖNEMİ",
+    "en": "TRANSFER WINDOW"
+   },
+   "baslik": {
+    "tr": "Kış Transfer Dönemi 2027: 26 Ülkenin Tescil Takvimi",
+    "en": "Winter Transfer Windows 2027: Registration Dates in 26 Countries"
+   },
+   "ozet": {
+    "tr": "Kadın futbolunda 2027 kış transfer (tescil) dönemleri: 26 ülkenin açılış ve kapanış tarihleri, dönem süreleri, takvim yılı sezonu oynayan liglerin geçen yılki dönemleri ve hazırlık için Sözleşme Takibi.",
+    "en": "Women's football winter transfer (registration) windows 2027: opening and closing dates in 26 countries, window lengths, last year's windows for the calendar-year leagues, and Contract Watch for planning."
+   },
+   "kart": {
+    "tr": "26 ülke, tek takvim: kış transfer dönemleri ne zaman açılıp kapanıyor?",
+    "en": "26 countries, one calendar: when do the winter transfer windows open and close?"
+   },
+   "ek": {
+    "tr": "zaman çizelgesi ve tarih tablosuyla",
+    "en": "with a timeline and a table of dates"
+   }
+  },
+  {
    "slug": "kuzey-amerika-2026-rakamlarla",
    "tarih": "2026-11-28",
    "okuma": 6,
